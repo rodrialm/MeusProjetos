@@ -1,0 +1,122 @@
+//import java.io.File;
+//import java.io.FileInputStream;
+//import java.io.IOException;
+//
+//import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+//import org.apache.poi.ss.usermodel.Cell;
+//import org.apache.poi.ss.usermodel.Row;
+//import org.apache.poi.ss.usermodel.Sheet;
+//import org.apache.poi.ss.usermodel.Workbook;
+//import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+//
+//import javafx.application.Application;
+//import javafx.scene.Scene;
+//import javafx.scene.control.Alert;
+//import javafx.scene.control.Alert.AlertType;
+//import javafx.scene.control.Button;
+//import javafx.scene.control.TextArea;
+//import javafx.scene.layout.VBox;
+//import javafx.stage.FileChooser;
+//import javafx.stage.Stage;
+//
+//public class ExcelReaderApp extends Application {
+//
+//    private TextArea textArea;
+//
+//    public static void main(String[] args) {
+//        launch(args);
+//    }
+//
+//    @Override
+//    public void start(Stage primaryStage) {
+//        primaryStage.setTitle("Leitor de Arquivos Excel");
+//
+//        // Botão para selecionar o arquivo
+//        Button button = new Button("Selecionar Arquivo Excel");
+//        button.setOnAction(e -> selecionarArquivo(primaryStage));
+//
+//        // Área de texto para exibir o conteúdo do arquivo
+//        textArea = new TextArea();
+//        textArea.setEditable(false);
+//        textArea.setWrapText(true);
+//
+//        // Layout
+//        VBox layout = new VBox(10);
+//        layout.getChildren().addAll(button, textArea);
+//        Scene scene = new Scene(layout, 600, 400);
+//        primaryStage.setScene(scene);
+//        primaryStage.show();
+//    }
+//
+//    private void selecionarArquivo(Stage primaryStage) {
+//        FileChooser fileChooser = new FileChooser();
+//        fileChooser.setTitle("Selecionar Arquivo Excel");
+//        fileChooser.getExtensionFilters().addAll(
+//                new FileChooser.ExtensionFilter("Arquivos Excel", "*.xls", "*.xlsm")
+//        );
+//        File arquivoSelecionado = fileChooser.showOpenDialog(primaryStage);
+//
+//        if (arquivoSelecionado != null) {
+//            try {
+//                // Verifica a extensão do arquivo
+//                String nomeArquivo = arquivoSelecionado.getName();
+//                if (nomeArquivo.endsWith(".xls") || nomeArquivo.endsWith(".xlsm")) {
+//                    // Lê o arquivo Excel
+//                    String conteudo = lerArquivoExcel(arquivoSelecionado);
+//                    textArea.setText(conteudo);
+//                } else {
+//                    exibirAlerta("Formato inválido", "O arquivo selecionado não é um Excel válido.");
+//                }
+//            } catch (IOException e) {
+//                exibirAlerta("Erro", "Erro ao ler o arquivo: " + e.getMessage());
+//            }
+//        }
+//    }
+//
+//    private String lerArquivoExcel(File arquivo) throws IOException {
+//        StringBuilder conteudo = new StringBuilder();
+//        FileInputStream fileInputStream = new FileInputStream(arquivo);
+//        Workbook workbook;
+//
+//        // Verifica se é .xls ou .xlsm
+//        if (arquivo.getName().endsWith(".xls")) {
+//            workbook = new HSSFWorkbook(fileInputStream); // Para .xls
+//        } else {
+//            workbook = new XSSFWorkbook(fileInputStream); // Para .xlsm
+//        }
+//
+//        // Lê a primeira planilha
+//        Sheet sheet = workbook.getSheetAt(0);
+//        for (Row row : sheet) {
+//            for (Cell cell : row) {
+//                // Converte o conteúdo da célula para String
+//                switch (cell.getCellType()) {
+//                    case STRING:
+//                        conteudo.append(cell.getStringCellValue()).append("\t");
+//                        break;
+//                    case NUMERIC:
+//                        conteudo.append(cell.getNumericCellValue()).append("\t");
+//                        break;
+//                    case BOOLEAN:
+//                        conteudo.append(cell.getBooleanCellValue()).append("\t");
+//                        break;
+//                    default:
+//                        conteudo.append("-\t");
+//                }
+//            }
+//            conteudo.append("\n");
+//        }
+//
+//        workbook.close();
+//        fileInputStream.close();
+//        return conteudo.toString();
+//    }
+//
+//    private void exibirAlerta(String titulo, String mensagem) {
+//        Alert alert = new Alert(AlertType.ERROR);
+//        alert.setTitle(titulo);
+//        alert.setHeaderText(null);
+//        alert.setContentText(mensagem);
+//        alert.showAndWait();
+//    }
+//}

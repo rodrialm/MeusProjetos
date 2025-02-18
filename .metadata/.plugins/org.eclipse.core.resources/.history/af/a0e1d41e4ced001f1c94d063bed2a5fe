@@ -1,5 +1,0 @@
-module proativa_rh {
-	requires javafx.controls;
-	requires javafx.fxml
-	
-}

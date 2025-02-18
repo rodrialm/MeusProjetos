@@ -31,8 +31,8 @@
 	GridPane.columnIndex="5" GridPane.rowIndex="3"
 	GridPane.columnSpan="6" GridPane.halignment="CENTER"
 	GridPane.valignment="CENTER">
-	
 	</Label>
+
 	<Button text="Arquivo"
 	styleClass="forma-botao"
 	GridPane.columnIndex="8" GridPane.rowIndex="8"
@@ -42,7 +42,7 @@
 			<Insets top="20" bottom="0" />
 		</GridPane.margin>
 	</Button>
-	<Button text="Salvar"
+	<Button text="Ler Arquivo"
 	styleClass="forma-botao"
 	GridPane.columnIndex="8" GridPane.rowIndex="9"
 	GridPane.columnSpan="2" GridPane.halignment="CENTER"
@@ -53,3 +53,6 @@
 	</Button>
 
 </GridPane>
+
+    
+

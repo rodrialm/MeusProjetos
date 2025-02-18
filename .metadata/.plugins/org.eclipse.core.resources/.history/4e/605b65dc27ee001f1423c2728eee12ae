@@ -1,0 +1,50 @@
+package proativa.projeto.modelo;
+
+import java.io.File;
+import java.io.IOException;
+
+import javafx.fxml.FXML;
+import javafx.stage.FileChooser;
+import javafx.stage.Stage;
+
+public class Controlador {
+	
+	private String arquivo = "C:\\Users\\Rodrigo\\Documents\\lista.xlsx";
+	
+	@FXML
+	public void buscarArquivo(Stage primaryStage) {
+		
+	    
+	        FileChooser fileChooser = new FileChooser();
+	        fileChooser.setTitle("Selecionar Arquivo Excel");
+	        fileChooser.getExtensionFilters().addAll(
+	                new FileChooser.ExtensionFilter("Arquivos Excel", "*.xls", "*.xlsm")
+	        );
+	        File arquivoSelecionado = fileChooser.showOpenDialog(primaryStage);
+
+	        if (arquivoSelecionado != null) {
+	            try {
+	                // Verifica a extensão do arquivo
+	                String nomeArquivo = arquivoSelecionado.getName();
+	                if (nomeArquivo.endsWith(".xls") || nomeArquivo.endsWith(".xlsm")) {
+	                    // Lê o arquivo Excel
+	                    String conteudo = lerArquivoExcel(arquivoSelecionado);
+	                    textArea.setText(conteudo);
+	                } else {
+	                    exibirAlerta("Formato inválido", "O arquivo selecionado não é um Excel válido.");
+	                }
+	            } catch (IOException e) {
+	                exibirAlerta("Erro", "Erro ao ler o arquivo: " + e.getMessage());
+	            }
+	        }
+	    
+		
+		System.out.println("Buscando Arquivo...");
+	}
+	
+	
+	@FXML
+	public void lerArquivo() {
+		System.out.println("Lendo Arquivo...");
+	}
+}

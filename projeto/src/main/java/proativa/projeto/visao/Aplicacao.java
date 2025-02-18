@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import proativa.projeto.modelo.Controlador;
 
 public class Aplicacao extends Application{
 
@@ -14,10 +15,16 @@ public class Aplicacao extends Application{
 		
 		String arquivosCSS = getClass().getResource("Layout.css").toExternalForm();
 		
+		FXMLLoader controle = new FXMLLoader(getClass().getResource("proativa.fxml"));
 		Parent raiz = FXMLLoader.load(getClass().getResource("proativa.fxml"));
+		
+		
+		Controlador controlador = controle.getController();
 		
 		Scene cena = new Scene(raiz, 750, 600);
 		cena.getStylesheets().add(arquivosCSS);
+		
+
 		
 //		primaryStage.setMaximized(true);;
 		primaryStage.setTitle("Proativa");
