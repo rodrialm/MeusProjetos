@@ -1,35 +1,22 @@
 package proativa.projeto.modelo;
 
-import java.io.File;
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextArea;
-import javafx.stage.FileChooser;
-import javafx.stage.Stage;
 
 public class Controlador {
-
-	private String arquivo = "C:\\Users\\Rodrigo\\Documents\\lista.xlsx";
 	
+	Arquivo arquivo = new Arquivo();
 	@FXML
 	private TextArea textArea;
 
 	@FXML
-	public void buscarArquivo(ActionEvent event) {
+	public void procurarArquivo(ActionEvent event) {
 
-//		Scanner entrada = new Scanner(textArea);
-
-		FileChooser selecionarArquivo = new FileChooser();
-		selecionarArquivo.setTitle("Selecionar Arquivo Excel");
-		selecionarArquivo.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Arquivos Excel", "*.xls", "*.xlsx"));
-		Stage stage = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
-		File arquivoSelecionado = selecionarArquivo.showOpenDialog(stage);
+		arquivo.buscarArquivo(event);
 		
-		System.out.println(arquivoSelecionado);
+		System.out.println(arquivo);
 	}
-
-
 
 	@FXML
 	public void lerArquivo() {

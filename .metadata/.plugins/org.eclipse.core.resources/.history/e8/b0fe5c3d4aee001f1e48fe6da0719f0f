@@ -1,0 +1,27 @@
+package proativa.projeto.modelo;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.TextArea;
+
+public class Controlador {
+	
+	@FXML
+	private TextArea textArea;
+
+	@FXML
+	public void procurarArquivo(ActionEvent event) {
+
+		Arquivo arquivo = new Arquivo();
+		arquivo.buscarArquivo(event);
+		
+		System.out.println(arquivo);
+	}
+
+	@FXML
+	public void lerArquivo() {
+		LeitorArquivoExcel leitorArquivo = new LeitorArquivoExcel();
+		leitorArquivo.lerArquivoExcel(arquivo);
+		System.out.println("Lendo Arquivo...");
+	}
+}

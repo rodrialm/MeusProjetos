@@ -37,7 +37,7 @@
 	styleClass="forma-botao"
 	GridPane.columnIndex="8" GridPane.rowIndex="8"
 	GridPane.columnSpan="2" GridPane.halignment="CENTER"
-	onAction="#buscarArquivo">
+	onAction="#procurarArquivo">
 		<GridPane.margin>
 			<Insets top="20" bottom="0" />
 		</GridPane.margin>

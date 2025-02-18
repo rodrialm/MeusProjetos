@@ -26,4 +26,9 @@
     <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="javafx.event.ActionEvent"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="proativa.projeto.modelo.Arquivo"/>
+    <fullyQualifiedTypeName name="org.apache.poi.sl.usermodel.Sheet"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.Cell"/>
+    <fullyQualifiedTypeName name="org.apache.commons.collections4.bag.SynchronizedSortedBag"/>
+    <fullyQualifiedTypeName name="proativa.projeto.modelo.LeitorArquivoExcel"/>
 </qualifiedTypeNameHistroy>

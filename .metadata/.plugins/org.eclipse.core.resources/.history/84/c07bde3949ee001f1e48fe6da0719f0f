@@ -1,0 +1,67 @@
+package proativa.projeto.modelo;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+
+import org.apache.commons.collections4.bag.SynchronizedSortedBag;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.sl.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+import javafx.scene.control.Cell;
+
+public class LeitorArquivoExcel {
+	
+	public LeitorArquivoExcel() {
+	}
+	
+	public LeitorArquivoExcel(File arquivo) {
+		lerArquivoExcel(arquivo);
+	}
+	
+
+
+	private void lerArquivoExcel(File arquivo) throws IOException {
+        StringBuilder conteudo = new StringBuilder();
+        FileInputStream fileInputStream = new FileInputStream(arquivo);
+        Workbook workbook;
+
+        // Verifica se é .xls ou .xlsm
+        if (arquivo.getName().endsWith(".xls")) {
+            workbook = new HSSFWorkbook(fileInputStream); // Para .xls
+            System.out.println(".xls");
+        } else {
+            workbook = new XSSFWorkbook(fileInputStream); // Para .xlsm
+        }
+
+//        // Lê a primeira planilha
+//        Sheet sheet = workbook.getSheetAt(0);
+//        for (Row row : sheet) {
+//            for (Cell cell : row) {
+//                // Converte o conteúdo da célula para String
+//                switch (cell.getCellType()) {
+//                    case STRING:
+//                        conteudo.append(cell.getStringCellValue()).append("\t");
+//                        break;
+//                    case NUMERIC:
+//                        conteudo.append(cell.getNumericCellValue()).append("\t");
+//                        break;
+//                    case BOOLEAN:
+//                        conteudo.append(cell.getBooleanCellValue()).append("\t");
+//                        break;
+//                    default:
+//                        conteudo.append("-\t");
+//                }
+//            }
+//            conteudo.append("\n");
+//        }
+
+        workbook.close();
+        fileInputStream.close();
+        
+//        return conteudo.toString();
+    }
+}

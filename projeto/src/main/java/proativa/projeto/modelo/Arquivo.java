@@ -1,21 +1,24 @@
 package proativa.projeto.modelo;
 
 import java.io.File;
-import java.io.IOException;
-
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.DatePicker;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
 public class Arquivo {
-	@FXML
-	public void buscarArquivo(ActionEvent event) {
+	
+	public Arquivo() {
+		
+	}
+	
+	public Arquivo(ActionEvent event) {
+		buscarArquivo(event);
+	}
+	
 
-//		Scanner entrada = new Scanner(textArea);
+	public void buscarArquivo(ActionEvent event) {
 
 		FileChooser selecionarArquivo = new FileChooser();
 		selecionarArquivo.setTitle("Selecionar Arquivo Excel");
@@ -28,19 +31,17 @@ public class Arquivo {
 //				String nomeArquivo = arquivoSelecionado.getName();
 //				if(nomeArquivo.endsWith(".xls") || nomeArquivo.endsWith(".xlsx")) {
 //					
-//					String conteudo = lerA
+//					String conteudo = LeitorArquivoExcel(new)
 //				}
 //			}
 //		}catch (IOException e){
 //			
 //		}
-		System.out.println(arquivoSelecionado);
 	}
 
 
-
-	@FXML
 	public void lerArquivo() {
 		System.out.println("Lendo Arquivo...");
+		
 	}
 }
