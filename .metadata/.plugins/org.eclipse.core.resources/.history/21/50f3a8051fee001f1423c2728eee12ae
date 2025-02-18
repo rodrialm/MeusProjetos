@@ -1,0 +1,23 @@
+package proativa.projeto.modelo;
+
+import java.io.File;
+
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+
+import javafx.fxml.FXML;
+import javafx.stage.FileChooser;
+
+public class Controlador {
+	
+	private File extensao;
+	
+	@FXML
+	private FileChooser encontrarArquivo = new FileChooser();
+	@FXML
+	HSSFWorkbook arquivoEscolhido = new HSSFWorkbook();
+	
+	public void buscarArquivo() {
+		arquivoEscolhido.
+		System.out.println("Pudin");
+	}
+}

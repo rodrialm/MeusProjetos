@@ -1,0 +1,10 @@
+module proativa_rh {
+	requires java.base;
+	requires javafx.controls;
+//	requires javafx.fxml;
+	requires org.controlsfx.controls;
+	
+	opens modelo;
+	opens visao;
+	
+}

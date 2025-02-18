@@ -1,0 +1,14 @@
+package proativa.projeto.modelo;
+
+import javax.swing.JFileChooser;
+
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+
+public class Arquivo {
+	
+	public static void main(String[] args) {
+
+	public void buscarArquivo() {
+	HSSFWorkbook arquivoEscolhido = new HSSFWorkbook();
+	}
+}

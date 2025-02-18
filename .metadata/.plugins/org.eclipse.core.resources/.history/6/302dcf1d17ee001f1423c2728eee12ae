@@ -1,0 +1,20 @@
+package proativa.projeto.modelo;
+
+import javax.swing.JFileChooser;
+
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+
+import javafx.fxml.FXML;
+import javafx.scene.control.DatePicker;
+
+public class Arquivo {
+	
+	@FXML DatePicker date;
+	public Arquivo() {
+		
+	}
+		
+	public void buscarArquivo() {
+		HSSFWorkbook arquivoEscolhido = new HSSFWorkbook();
+	}
+}

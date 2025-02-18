@@ -1,0 +1,11 @@
+package modelo;
+
+import java.io.File;
+
+public class Arquivo {
+
+	public static void main(String[] args) {
+		
+		File arquivo = new File("C:lista.xlsx")
+	}
+}

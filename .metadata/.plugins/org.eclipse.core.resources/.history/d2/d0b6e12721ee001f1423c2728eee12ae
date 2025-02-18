@@ -1,0 +1,30 @@
+package proativa.projeto.modelo;
+
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.apache.poi.xssf.streaming.SXSSFWorkbook;
+
+import javafx.fxml.FXML;
+import javafx.stage.FileChooser;
+
+public class Controlador {
+	
+	private String extensao;
+	private Workbook origem;
+	private Workbook destino;
+	private FileChooser encontrarArquivo = new FileChooser();
+	private HSSFWorkbook arquivoEscolhido = new HSSFWorkbook();
+	
+	@FXML
+	public void buscarArquivo() {
+		
+		  if (extensao.toUpperCase().equals(".XLS")) {
+		      destino = new HSSFWorkbook();
+		    } else {
+		      destino = new SXSSFWorkbook();
+		    }
+		
+		System.out.println("Pudin");
+	}
+}

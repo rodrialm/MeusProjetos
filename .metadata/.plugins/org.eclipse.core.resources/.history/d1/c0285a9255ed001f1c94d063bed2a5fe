@@ -1,0 +1,23 @@
+package visao;
+
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+public class Aplicacao extends Application {
+
+	@Override
+	public void start(Stage primaryStage) throws Exception {
+		 primaryStage.setTitle("Dogs application");
+		    primaryStage.setWidth(500);
+		    primaryStage.setHeight(400);
+
+		    Scene primaryScene = new Scene(null);
+		    primaryStage.setScene(primaryScene);
+
+		    primaryStage.show();
+	}
+	public static void main(String[] args) {
+		launch(args);
+	}
+}
