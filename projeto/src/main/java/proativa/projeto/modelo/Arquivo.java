@@ -1,47 +1,62 @@
 package proativa.projeto.modelo;
 
 import java.io.File;
+import java.io.IOException;
 
 import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
 public class Arquivo {
 	
-	public Arquivo() {
-		
-	}
+	 private String nomeArquivo;
 	
-	public Arquivo(ActionEvent event) {
+	public Arquivo() {
+
+	}
+
+	public Arquivo(ActionEvent event) throws Exception{
 		buscarArquivo(event);
 	}
-	
 
 	public void buscarArquivo(ActionEvent event) {
 
-		FileChooser selecionarArquivo = new FileChooser();
-		selecionarArquivo.setTitle("Selecionar Arquivo Excel");
-		selecionarArquivo.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Arquivos Excel", "*.xls", "*.xlsx"));
-		Stage stage = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
-		File arquivoSelecionado = selecionarArquivo.showOpenDialog(stage);
+		try {
+			FileChooser selecionarArquivo = new FileChooser();
+			selecionarArquivo.setTitle("Selecionar Arquivo Excel");
+			selecionarArquivo.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Arquivos Excel", "*.xls", "*.xlsx"));
+			Stage stage = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
+			File arquivoSelecionado = selecionarArquivo.showOpenDialog(stage);
+			nomeArquivo = arquivoSelecionado.getName();
+		} catch (Exception e) {
+			System.out.println("Arquivo não selecionado!");
+		}
 		
 //		if(arquivoSelecionado != null) {
 //			try {
 //				String nomeArquivo = arquivoSelecionado.getName();
 //				if(nomeArquivo.endsWith(".xls") || nomeArquivo.endsWith(".xlsx")) {
 //					
-//					String conteudo = LeitorArquivoExcel(new)
+//					String conteudo = (new LeitorArquivoExcel(arquivoSelecionado).toString());
+//				} else {
+//					System.out.println("Formato invalido");
 //				}
+//			} catch (Exception e){
+//				System.out.println(e.getMessage());
 //			}
-//		}catch (IOException e){
-//			
 //		}
 	}
 
-
 	public void lerArquivo() {
-		System.out.println("Lendo Arquivo...");
-		
+		System.out.println("Arquivo:Lendo Arquivo...");
+
+	}
+	
+	public String getNome() {
+		if(nomeArquivo != null) {
+			return nomeArquivo;
+		} else {
+			return "Arquivo não selecionado!";
+		}
 	}
 }

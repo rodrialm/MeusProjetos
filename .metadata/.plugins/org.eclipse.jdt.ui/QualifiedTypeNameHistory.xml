@@ -12,7 +12,6 @@
     <fullyQualifiedTypeName name="javafx.stage.FileChooser"/>
     <fullyQualifiedTypeName name="org.apache.poi.ss.usermodel.Workbook"/>
     <fullyQualifiedTypeName name="org.apache.poi.ss.usermodel.WorkbookFactory"/>
-    <fullyQualifiedTypeName name="javafx.fxml.FXML"/>
     <fullyQualifiedTypeName name="java.awt.Button"/>
     <fullyQualifiedTypeName name="javafx.scene.control.Button"/>
     <fullyQualifiedTypeName name="javafx.application.Application"/>
@@ -25,10 +24,12 @@
     <fullyQualifiedTypeName name="java.awt.Event"/>
     <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="javafx.event.ActionEvent"/>
-    <fullyQualifiedTypeName name="java.io.IOException"/>
-    <fullyQualifiedTypeName name="proativa.projeto.modelo.Arquivo"/>
     <fullyQualifiedTypeName name="org.apache.poi.sl.usermodel.Sheet"/>
     <fullyQualifiedTypeName name="javafx.scene.control.Cell"/>
     <fullyQualifiedTypeName name="org.apache.commons.collections4.bag.SynchronizedSortedBag"/>
+    <fullyQualifiedTypeName name="javafx.fxml.FXML"/>
     <fullyQualifiedTypeName name="proativa.projeto.modelo.LeitorArquivoExcel"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="proativa.projeto.modelo.Arquivo"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
 </qualifiedTypeNameHistroy>

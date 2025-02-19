@@ -1,8 +1,0 @@
-package proativa.projeto.modelo;
-
-import javax.swing.JFileChooser;
-
-public class Arquivo {
-	
-	JFileChooser arquivoEscolhido = new JFileChooser();
-}

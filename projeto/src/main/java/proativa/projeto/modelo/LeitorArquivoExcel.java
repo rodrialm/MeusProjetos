@@ -19,35 +19,23 @@ public class LeitorArquivoExcel {
 	}
 	
 	public LeitorArquivoExcel(File arquivo) {
-		lerArquivoExcel(arquivo);
+//		lerArquivoExcel(arquivo);
 	}
 	
 
-	public void lerArquivoExcel(File arquivo)  {
-	    // Verifica se é .xls ou .xlsm
+	private String lerArquivoExcel(File arquivo) throws IOException {
+        StringBuilder conteudo = new StringBuilder();
+        FileInputStream fileInputStream = new FileInputStream(arquivo);
+        Workbook workbook;
+
+        // Verifica se é .xls ou .xlsm
         if (arquivo.getName().endsWith(".xls")) {
-           
-            System.out.println(".xls");
+            workbook = new HSSFWorkbook(fileInputStream); // Para .xls
         } else {
-           
-            System.out.println(".xlsm");
+            workbook = new XSSFWorkbook(fileInputStream); // Para .xlsm
         }
-	
-	
-//
-//	private void lerArquivoExcel(File arquivo) throws IOException {
-//        StringBuilder conteudo = new StringBuilder();
-//        FileInputStream fileInputStream = new FileInputStream(arquivo);
-//        Workbook workbook;
-//
-//        // Verifica se é .xls ou .xlsm
-//        if (arquivo.getName().endsWith(".xls")) {
-//            workbook = new HSSFWorkbook(fileInputStream); // Para .xls
-//        } else {
-//            workbook = new XSSFWorkbook(fileInputStream); // Para .xlsm
-//        }
-//
-//        // Lê a primeira planilha
+
+        // Lê a primeira planilha
 //        Sheet sheet = workbook.getSheetAt(0);
 //        for (Row row : sheet) {
 //            for (Cell cell : row) {
@@ -73,5 +61,6 @@ public class LeitorArquivoExcel {
 //        fileInputStream.close();
 //        
 //        return conteudo.toString();
+        return "pudim";
     }
 }

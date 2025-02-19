@@ -1,0 +1,49 @@
+package proativa.projeto.modelo;
+
+import java.io.File;
+
+import javafx.event.ActionEvent;
+import javafx.stage.FileChooser;
+import javafx.stage.Stage;
+
+public class Arquivo {
+	
+	
+	
+	public Arquivo() {
+		
+	}
+	
+	public Arquivo(ActionEvent event) {
+		buscarArquivo(event);
+	}
+	
+
+	public void buscarArquivo(ActionEvent event) {
+
+		FileChooser selecionarArquivo = new FileChooser();
+		selecionarArquivo.setTitle("Selecionar Arquivo Excel");
+		selecionarArquivo.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Arquivos Excel", "*.xls", "*.xlsx"));
+		Stage stage = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
+		File arquivoSelecionado = selecionarArquivo.showOpenDialog(stage);
+		
+		
+		if(arquivoSelecionado != null) {
+			try {
+				String nomeArquivo = arquivoSelecionado.getName();
+				if(nomeArquivo.endsWith(".xls") || nomeArquivo.endsWith(".xlsx")) {
+					
+					String conteudo = LeitorArquivoExcel(new LeitorArquivoExcel(arquivoSelecionado));
+				}
+			}
+		}catch (IOException e){
+			
+		}
+	}
+
+
+	public void lerArquivo() {
+		System.out.println("Lendo Arquivo...");
+		
+	}
+}
