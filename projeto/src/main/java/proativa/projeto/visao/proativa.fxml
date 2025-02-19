@@ -44,10 +44,12 @@
 			<Insets top="20" bottom="0" />
 		</GridPane.margin>
 	</Button>
-	<VBox GridPane.columnIndex="9" GridPane.rowIndex="8"
+	<GridPane 
+	styleClass="campo-texto"
+	GridPane.columnIndex="10" GridPane.rowIndex="7"
 	 GridPane.halignment="CENTER" >
-	<TextArea wrapText="false" > </TextArea>
-	 </VBox>
+	<TextArea text="selecione o arquivo" fx:id="campoTextoArea" > </TextArea>
+	 </GridPane>
 	<Button text="Ler Arquivo"
 	styleClass="forma-botao"
 	GridPane.columnIndex="8" GridPane.rowIndex="9"

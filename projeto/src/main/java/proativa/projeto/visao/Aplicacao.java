@@ -16,7 +16,7 @@ public class Aplicacao extends Application{
 		
 		Parent raiz = FXMLLoader.load(getClass().getResource("proativa.fxml"));
 		
-		Scene cena = new Scene(raiz, 750, 600);
+		Scene cena = new Scene(raiz, 900, 600);
 		cena.getStylesheets().add(arquivosCSS);
 		
 //		primaryStage.setMaximized(true);;

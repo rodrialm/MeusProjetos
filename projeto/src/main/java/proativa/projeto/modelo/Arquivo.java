@@ -1,6 +1,7 @@
 package proativa.projeto.modelo;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 
 import javafx.event.ActionEvent;
@@ -8,14 +9,15 @@ import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
 public class Arquivo {
-	
-	 private String nomeArquivo;
-	
+
+	private String nomeArquivo;
+	File arquivoSelecionado;
+
 	public Arquivo() {
 
 	}
 
-	public Arquivo(ActionEvent event) throws Exception{
+	public Arquivo(ActionEvent event) throws Exception {
 		buscarArquivo(event);
 	}
 
@@ -24,36 +26,41 @@ public class Arquivo {
 		try {
 			FileChooser selecionarArquivo = new FileChooser();
 			selecionarArquivo.setTitle("Selecionar Arquivo Excel");
-			selecionarArquivo.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Arquivos Excel", "*.xls", "*.xlsx"));
+			selecionarArquivo.getExtensionFilters()
+					.addAll(new FileChooser.ExtensionFilter("Arquivos Excel", "*.xls", "*.xlsx"));
 			Stage stage = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
-			File arquivoSelecionado = selecionarArquivo.showOpenDialog(stage);
+			arquivoSelecionado = selecionarArquivo.showOpenDialog(stage);
 			nomeArquivo = arquivoSelecionado.getName();
+				
+			if (arquivoSelecionado != null) {
+				try {
+					String nomeArquivo = arquivoSelecionado.getName();
+					if (nomeArquivo.endsWith(".xls") || nomeArquivo.endsWith(".xlsx")) {
+
+					} else {
+						nomeArquivo = "Formato invalido";
+					}
+				} catch (Exception e) {
+					System.out.println(e.getMessage());
+				}
+			}
+
 		} catch (Exception e) {
-			System.out.println("Arquivo não selecionado!");
+			System.out.println(e.getMessage());
 		}
 		
-//		if(arquivoSelecionado != null) {
-//			try {
-//				String nomeArquivo = arquivoSelecionado.getName();
-//				if(nomeArquivo.endsWith(".xls") || nomeArquivo.endsWith(".xlsx")) {
-//					
-//					String conteudo = (new LeitorArquivoExcel(arquivoSelecionado).toString());
-//				} else {
-//					System.out.println("Formato invalido");
-//				}
-//			} catch (Exception e){
-//				System.out.println(e.getMessage());
-//			}
-//		}
 	}
 
 	public void lerArquivo() {
-		System.out.println("Arquivo:Lendo Arquivo...");
-
+		try(FileInputStream arquivo = new FileInputStream(arquivoSelecionado)){
+		}catch (Exception e) {
+			
+		}
+		
 	}
-	
+
 	public String getNome() {
-		if(nomeArquivo != null) {
+		if (nomeArquivo != null) {
 			return nomeArquivo;
 		} else {
 			return "Arquivo não selecionado!";

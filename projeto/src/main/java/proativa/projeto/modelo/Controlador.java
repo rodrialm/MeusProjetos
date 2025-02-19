@@ -5,23 +5,22 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TextArea;
 
 public class Controlador {
+	Arquivo arquivo = new Arquivo();
 	
-//	@FXML
-//	private TextArea textArea;
-	
-	String nomeArquivo;
-
+	@FXML
+	private TextArea campoTextoArea;
+		
 	@FXML
 	public void procurarArquivo(ActionEvent event) {
-
-		Arquivo arquivo = new Arquivo();
+		
 		arquivo.buscarArquivo(event);
-		nomeArquivo = arquivo.getNome();
-//		System.out.println("Controlador" + nomeArquivo);
+		if(arquivo != null) {
+			campoTextoArea.setText(arquivo.getNome()) ;
+		} 
 	}
 
 	@FXML
 	public void lerArquivo() {
-		System.out.println("Controlador: Lendo Arquivo...");
+		arquivo.lerArquivo();
 	}
 }

@@ -29,7 +29,8 @@
     <fullyQualifiedTypeName name="org.apache.commons.collections4.bag.SynchronizedSortedBag"/>
     <fullyQualifiedTypeName name="javafx.fxml.FXML"/>
     <fullyQualifiedTypeName name="proativa.projeto.modelo.LeitorArquivoExcel"/>
-    <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="proativa.projeto.modelo.Arquivo"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
 </qualifiedTypeNameHistroy>

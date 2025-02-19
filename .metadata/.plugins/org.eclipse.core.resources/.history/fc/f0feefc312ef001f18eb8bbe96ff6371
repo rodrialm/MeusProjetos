@@ -1,0 +1,68 @@
+package proativa.projeto.modelo;
+
+import java.io.File;
+import java.io.FileInputStream;
+
+import javafx.event.ActionEvent;
+import javafx.stage.FileChooser;
+import javafx.stage.Stage;
+
+public class Arquivo {
+
+	private String nomeArquivo;
+	File arquivoSelecionado;
+
+	public Arquivo() {
+
+	}
+
+	public Arquivo(ActionEvent event) throws Exception {
+		buscarArquivo(event);
+	}
+
+	public void buscarArquivo(ActionEvent event) {
+
+		try {
+			FileChooser selecionarArquivo = new FileChooser();
+			selecionarArquivo.setTitle("Selecionar Arquivo Excel");
+			selecionarArquivo.getExtensionFilters()
+					.addAll(new FileChooser.ExtensionFilter("Arquivos Excel", "*.xls", "*.xlsx"));
+			Stage stage = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
+			arquivoSelecionado = selecionarArquivo.showOpenDialog(stage);
+			nomeArquivo = arquivoSelecionado.getName();
+
+			if (arquivoSelecionado != null) {
+				try {
+					String nomeArquivo = arquivoSelecionado.getName();
+					if (nomeArquivo.endsWith(".xls") || nomeArquivo.endsWith(".xlsx")) {
+
+					} else {
+						System.out.println("Formato invalido");
+					}
+				} catch (Exception e) {
+					System.out.println(e.getMessage());
+				}
+			}
+
+		} catch (Exception e) {
+		}
+		
+	}
+
+	public void lerArquivo() {
+		String caminhoArquivo = arquivoSelecionado.toString();
+		
+		try(FileInputStream arquivo = new FileInputStream(new File(caminhoArquivo))){
+			
+		}catch
+		
+	}
+
+	public String getNome() {
+		if (nomeArquivo != null) {
+			return nomeArquivo;
+		} else {
+			return "Arquivo não selecionado!";
+		}
+	}
+}
