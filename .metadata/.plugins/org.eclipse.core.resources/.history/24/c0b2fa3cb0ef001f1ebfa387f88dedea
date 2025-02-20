@@ -1,0 +1,13 @@
+package proativa.projeto.modelo;
+
+public class Pessoa {
+	
+	String cpf;
+	String email;
+	
+	public Pessoa() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+}

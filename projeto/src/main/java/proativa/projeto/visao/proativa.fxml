@@ -19,10 +19,10 @@
 		
 	</columnConstraints>
 	
-	<Label text="-"
+	<Label text="PROIMPORTAPONTO"
 	styleClass="tituloPrincipal"
 	GridPane.columnIndex="7" GridPane.rowIndex="1"
-	GridPane.columnSpan="2" GridPane.halignment="LEFT"
+	GridPane.columnSpan="4" GridPane.halignment="LEFT"
 	GridPane.valignment="CENTER">
 	
 	</Label>
@@ -30,14 +30,14 @@
 	<Label text="Anexar o arquivo contendo a lista de CPFs para serem lidos" 
 	styleClass="mensagemFormatoArquivo"
 	GridPane.columnIndex="5" GridPane.rowIndex="3"
-	GridPane.columnSpan="6" GridPane.halignment="CENTER"
+	GridPane.columnSpan="7" GridPane.halignment="CENTER"
 	GridPane.valignment="CENTER">
 	</Label>
 	
 	<Button text="Arquivo"
 	styleClass="forma-botao"
 	GridPane.columnIndex="8" GridPane.rowIndex="7"
-	GridPane.columnSpan="2" GridPane.halignment="CENTER"
+	GridPane.columnSpan="2" GridPane.valignment="CENTER"
 	onAction="#procurarArquivo">
 	
 		<GridPane.margin>

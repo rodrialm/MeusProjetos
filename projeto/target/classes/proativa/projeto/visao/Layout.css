@@ -3,7 +3,7 @@
 }
 
 .tituloPrincipal{
-	-fx-font-size: 48px;
+	-fx-font-size: 35px;
 	-fx-text-fill: #FFF;
 }
 
@@ -17,7 +17,7 @@
 }
 
 .campo-texto{
-	-fx-max-width: 200;
+	-fx-max-width: 250;
 	-fx-max-height: 20;
 	-fx-font-size: 14px;
 }

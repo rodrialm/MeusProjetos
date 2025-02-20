@@ -30,7 +30,7 @@ public class Aplicacao extends Application{
 
 		
 //		primaryStage.setMaximized(true);;
-		janela.setTitle("Proativa");
+		janela.setTitle(".::PROIMPORTAPONTO::.");
 		janela.setScene(cenaPrincipal);
 		janela.show();
 	}

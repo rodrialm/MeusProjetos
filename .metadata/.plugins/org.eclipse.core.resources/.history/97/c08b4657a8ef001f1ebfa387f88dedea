@@ -1,0 +1,23 @@
+.backgoundPrincipal{
+	-fx-background-color: yellow;
+}
+
+.tituloPrincipal{
+	-fx-font-size: 48px;
+	-fx-text-fill: #FFF;
+}
+
+.mensagemFormatoArquivo{
+	-fx-font-size: 21px;
+	-fx-text-fill: #FFF;
+}
+
+.forma-botao{
+	-fx-font-size: 16px;
+}
+
+.campo-texto{
+	-fx-max-width: 250;
+	-fx-max-height: 20;
+	-fx-font-size: 14px;
+}

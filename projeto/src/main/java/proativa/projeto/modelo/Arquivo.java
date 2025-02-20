@@ -3,6 +3,8 @@ package proativa.projeto.modelo;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.*;
@@ -16,6 +18,8 @@ public class Arquivo {
 
 	private String nomeArquivo;
 	File arquivoSelecionado;
+
+	List<Pessoa> pessoas = new ArrayList<>();
 
 	public Arquivo() {
 
@@ -35,75 +39,90 @@ public class Arquivo {
 			Stage stage = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
 			arquivoSelecionado = selecionarArquivo.showOpenDialog(stage);
 			nomeArquivo = arquivoSelecionado.getName();
-				
-			if (arquivoSelecionado != null) {
-				try {
-					String nomeArquivo = arquivoSelecionado.getName();
-					if (nomeArquivo.endsWith(".xls") || nomeArquivo.endsWith(".xlsx")) {
-
-					} else {
-						nomeArquivo = "Formato invalido";
-					}
-				} catch (Exception e) {
-					System.out.println(e.getMessage());
-				}
-			}
 
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
-		
+
 	}
 
 	public void lerArquivo() {
-		try(FileInputStream arquivo = new FileInputStream(arquivoSelecionado)){
-			Workbook workbook ;
-			
-			if(nomeArquivo.endsWith(".xlsx")) {
-				workbook =  new XSSFWorkbook(arquivo);
+		boolean filtroCpfEmail;
+		String cpf;
+		String email;
+		String nomeCelula;
+		int contador = 0;
+
+		try (FileInputStream arquivo = new FileInputStream(arquivoSelecionado)) {
+			Workbook workbook;
+			if (nomeArquivo.endsWith(".xlsx")) {
+				workbook = new XSSFWorkbook(arquivo);
 			} else {
-				workbook =  new HSSFWorkbook(arquivo);
-				
+				workbook = new HSSFWorkbook(arquivo);
 			}
-			
-			 Sheet sheet = workbook.getSheetAt(0);
-			 
-			 for(Row linha: sheet) {
-				 
-				 for (Cell celula : linha) {
-					 
-					 switch (celula.getCellType()) {
-					 
-					 case STRING:
-						 System.out.print(celula.getStringCellValue() + " | \t");
-						 break;
-					 
-					 case NUMERIC:
-						 System.out.print(celula.getNumericCellValue() + " | \t");
-						 break;
-					 
-					 case BOOLEAN:
-						 System.out.print(celula.getBooleanCellValue() + " | \t");
-						 break;
-					
-					 case FORMULA:
-						 System.out.print(celula.getCellFormula() + " | \t");
-						 break;
-						 
+
+			Sheet sheet = workbook.getSheetAt(0);
+
+			int rowIndex = 0;
+
+			for (Row linha : sheet) {
+
+				// Pula a primeira linha da planilha
+
+				if (rowIndex == 0) {
+					rowIndex++;
+					continue;
+				}
+				Cell celula = linha.getCell(3);
+//				 for (Cell celula : linha) {
+
+				nomeCelula = celula.getAddress().toString();
+				filtroCpfEmail = nomeCelula.toUpperCase().startsWith("D");
+
+				if (filtroCpfEmail) {
+					switch (celula.getCellType()) {
+
+					case STRING:
+//							 System.out.println(celula.getStringCellValue());
+						System.out.println(linha.getCell(0) + "| " + linha.getCell(1));
+						cpf = linha.getCell(3).toString();
+						email = linha.getCell(4).toString();
+						System.out.println(cpf + " | " + email);
+						Pessoa pessoa = new Pessoa();
+						pessoas.add(pessoa);
+						System.out.print(" ===> " + contador + "\n");
+
+						contador++;
+						break;
+
+					case NUMERIC:
+//						 System.out.print(celula.getNumericCellValue() + " | \t");
+						break;
+
+					case BOOLEAN:
+//						 System.out.print(celula.getBooleanCellValue() + " | \t");
+						break;
+
+					case FORMULA:
+//						 System.out.print(celula.getCellFormula() + " | \t");
+						break;
+
 					default:
-						System.out.print("Desconhecido \t");
-						
-					 }
-				 }
-				 System.out.println();
-			 }
-			 
-			 workbook.close();
-			
-		}catch (IOException e) {
+//						System.out.print("Desconhecido \t");
+
+					}
+//				 }
+//				 System.out.println();
+					rowIndex++;
+				}
+			}
+			System.out.println("Quatidade de CPFs:  " + contador);
+			workbook.close();
+
+		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
+
 	}
 
 	public String getNome() {
