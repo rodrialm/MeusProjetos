@@ -1,0 +1,23 @@
+package proativa.projeto.visao;
+
+import javafx.fxml.FXML;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+public class Cenas {
+
+	Stage cena;
+	
+	public Cenas() {
+		criarCenaPrincipal();
+	}
+	
+	
+	public void criarCenaPrincipal() {
+		
+	}
+	
+	public void criarCenaCarregamento() {
+		 = new Scene(raiz, 900, 600);
+	}
+}

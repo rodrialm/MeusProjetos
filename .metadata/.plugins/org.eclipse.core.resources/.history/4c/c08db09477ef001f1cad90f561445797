@@ -1,0 +1,15 @@
+package proativa.projeto.visao;
+
+import javafx.fxml.FXML;
+
+public class Cenas {
+
+	public Cenas() {
+		
+	}
+	
+	@FXML
+	public void criarCenaPrincipal() {
+		
+	}
+}

@@ -23,4 +23,9 @@ public class Controlador {
 	public void lerArquivo() {
 		arquivo.lerArquivo();
 	}
+	
+	@FXML
+	public void fechar() {
+		System.exit(0);
+	}
 }

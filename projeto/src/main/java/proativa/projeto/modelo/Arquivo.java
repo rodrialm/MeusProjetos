@@ -4,6 +4,10 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
 import javafx.event.ActionEvent;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
@@ -53,8 +57,51 @@ public class Arquivo {
 
 	public void lerArquivo() {
 		try(FileInputStream arquivo = new FileInputStream(arquivoSelecionado)){
-		}catch (Exception e) {
+			Workbook workbook ;
 			
+			if(nomeArquivo.endsWith(".xlsx")) {
+				workbook =  new XSSFWorkbook(arquivo);
+			} else {
+				workbook =  new HSSFWorkbook(arquivo);
+				
+			}
+			
+			 Sheet sheet = workbook.getSheetAt(0);
+			 
+			 for(Row linha: sheet) {
+				 
+				 for (Cell celula : linha) {
+					 
+					 switch (celula.getCellType()) {
+					 
+					 case STRING:
+						 System.out.print(celula.getStringCellValue() + " | \t");
+						 break;
+					 
+					 case NUMERIC:
+						 System.out.print(celula.getNumericCellValue() + " | \t");
+						 break;
+					 
+					 case BOOLEAN:
+						 System.out.print(celula.getBooleanCellValue() + " | \t");
+						 break;
+					
+					 case FORMULA:
+						 System.out.print(celula.getCellFormula() + " | \t");
+						 break;
+						 
+					default:
+						System.out.print("Desconhecido \t");
+						
+					 }
+				 }
+				 System.out.println();
+			 }
+			 
+			 workbook.close();
+			
+		}catch (IOException e) {
+			e.printStackTrace();
 		}
 		
 	}

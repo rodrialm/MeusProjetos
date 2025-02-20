@@ -1,0 +1,27 @@
+package proativa.projeto.modelo;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.TextArea;
+
+public class Controlador {
+	Arquivo arquivo = new Arquivo();
+	
+	@FXML
+	private TextArea campoTextoArea;
+		
+	@FXML
+	public void procurarArquivo(ActionEvent event) {
+		
+		arquivo.buscarArquivo(event);
+		if(arquivo != null) {
+			campoTextoArea.setText(arquivo.getNome()) ;
+		} 
+	}
+
+	@FXML
+	public void lerArquivo() {
+		arquivo.toString();
+//		arquivo.lerArquivo();
+	}
+}

@@ -1,29 +1,59 @@
 package proativa.projeto.visao;
 
 import javafx.application.Application;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class Aplicacao extends Application{
+	
+	private Parent raiz;
+	private Parent carregamento;
+	private String arquivosCSS;
+	private Stage janela;
+	private Scene cenaPrincipal;
+	private Scene cenaCarregamento;
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		
+		arquivosCSS = getClass().getResource("Layout.css").toExternalForm();
+		raiz = FXMLLoader.load(getClass().getResource("proativa.fxml"));
+		carregamento = FXMLLoader.load(getClass().getResource("carregamento.fxml"));
 		
-		String arquivosCSS = getClass().getResource("Layout.css").toExternalForm();
+		janela = primaryStage;
 		
-		Parent raiz = FXMLLoader.load(getClass().getResource("proativa.fxml"));
-		
-		Scene cena = new Scene(raiz, 900, 600);
-		cena.getStylesheets().add(arquivosCSS);
+		criarCenaPrincipal();
+		criarCenaCarregamento();
+
 		
 //		primaryStage.setMaximized(true);;
-		primaryStage.setTitle("Proativa");
-		primaryStage.setScene(cena);
-		primaryStage.show();
+		janela.setTitle("Proativa");
+		janela.setScene(cenaPrincipal);
+		janela.show();
 	}
+	
+	@FXML
+	private void criarCenaPrincipal() {
+		janela.setTitle("Proativa");
+		janela.setScene(cenaPrincipal);
+		
+		cenaPrincipal = new Scene(raiz, 900, 600);
+		cenaPrincipal.getStylesheets().add(arquivosCSS);
+	}
+	@FXML
+	private void criarCenaCarregamento() {
+		janela.setScene(cenaCarregamento);
+		janela.setTitle("Proativa");
+		
+		cenaCarregamento= new Scene(carregamento,900,600);
+		cenaCarregamento.getStylesheets().add(arquivosCSS);
+		
+	}
+	
+	
 	public static void main(String[] args) {
 		launch(args);
 	}

@@ -48,13 +48,13 @@
 	styleClass="campo-texto"
 	GridPane.columnIndex="10" GridPane.rowIndex="7"
 	 GridPane.halignment="CENTER" >
-	<TextArea text="selecione o arquivo" fx:id="campoTextoArea" > </TextArea>
+	<TextArea text="selecione o arquivo!"  fx:id="campoTextoArea" > </TextArea>
 	 </GridPane>
 	<Button text="Ler Arquivo"
 	styleClass="forma-botao"
-	GridPane.columnIndex="8" GridPane.rowIndex="9"
+	GridPane.columnIndex="9" GridPane.rowIndex="9"
 	GridPane.columnSpan="2" GridPane.halignment="CENTER"
-	onAction="#lerArquivo">
+	onAction="#lerArquivo" >
 		<GridPane.margin>
 			<Insets top="10" bottom="20" />
 		</GridPane.margin>
