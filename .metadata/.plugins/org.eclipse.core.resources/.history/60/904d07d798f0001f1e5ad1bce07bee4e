@@ -1,0 +1,10 @@
+package proativa.projeto.modelo;
+
+import javafx.fxml.FXML;
+import javafx.scene.control.TableView;
+
+public class ControladorCarregamento {
+	
+	@FXML
+//	private TableView<Dadosexcel>
+}

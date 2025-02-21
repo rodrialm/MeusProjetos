@@ -7,50 +7,57 @@ import javafx.stage.DirectoryChooser;
 import javafx.stage.Stage;
 
 public class ProcurarDiretorio {
+
 	
-		private String caminhoDiretorio;
-		private String nomeArquivoParaProcurar;
-		
-		public ProcurarDiretorio() {
-			
-		}
-	
+	private String caminhoDiretorio;
+	private String nomeArquivoParaProcurar;
+	private boolean campoDiretorioVazio = true;
+	String nomeEmPDF;
+	Arquivo aquivo = new Arquivo();
+
+	public ProcurarDiretorio() {
+
+	}
+
 	public ProcurarDiretorio(String caminhoDiretorio, String nomeArquivoParaProcurar) {
-			super();
-			this.caminhoDiretorio = caminhoDiretorio;
-			this.nomeArquivoParaProcurar = nomeArquivoParaProcurar;
-		}
+		super();
+		this.caminhoDiretorio = caminhoDiretorio;
+		this.nomeArquivoParaProcurar = nomeArquivoParaProcurar;
+	}
 
 	public void procurarDiretorio(ActionEvent event) {
-		
+
 		try {
 			DirectoryChooser selecionarDiretorio = new DirectoryChooser();
 			selecionarDiretorio.setTitle("selecione o diretório");
-			
+
 			String userHome = System.getProperty("user.home");
 			File downloadsDir = new File(userHome, "Downloads");
-			
+
 			if (downloadsDir.exists() && downloadsDir.isDirectory()) {
 				selecionarDiretorio.setInitialDirectory(downloadsDir);
 			} else {
-				
+
 				selecionarDiretorio.setInitialDirectory(new File(userHome));
 			}
-			
+
 			Stage palco = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
 			File diretorioSelecionada = selecionarDiretorio.showDialog(palco);
 			caminhoDiretorio = diretorioSelecionada.getPath();
+			campoDiretorioVazio = false;
+
 		} catch (Exception e) {
 			caminhoDiretorio = "selecione o diretório";
+			campoDiretorioVazio = true;
 		}
 	}
-	
+
 	public File percorrerDiretorio(File diretorio, String nomeArquivo) {
-		if ( diretorio.isDirectory()) {
+		if (diretorio.isDirectory()) {
 			File[] arquivos = diretorio.listFiles();
 			if (arquivos != null) {
-				for(File arquivo: arquivos) {
-					if(arquivo.isFile() && arquivo.getName().equals(nomeArquivo)) {
+				for (File arquivo : arquivos) {
+					if (arquivo.isFile() && tipoPDF(arquivo).equals(nomeArquivo)) {
 						System.out.println("Arquivo encontrado: " + arquivo.getAbsolutePath());
 						return arquivo;
 					}
@@ -60,6 +67,12 @@ public class ProcurarDiretorio {
 		return null;
 	}
 	
+	public void encontrarArquivosNaPasta() {
+//		for(Pessoa pessoas: pessoas) {
+			
+//		}
+	}
+
 	public String getCaminhoDiretorio() {
 		return caminhoDiretorio;
 	}
@@ -67,6 +80,16 @@ public class ProcurarDiretorio {
 	public String getNomeArquivoParaProcurar() {
 		return nomeArquivoParaProcurar;
 	}
-	
-	
+
+	String tipoPDF(File arquivo) {
+		if (arquivo.isFile()) {
+			nomeEmPDF = arquivo.getName() + ".pdf";
+		}
+		return nomeEmPDF;
+	}
+
+	public boolean isCampoDiretorioVazio() {
+		return campoDiretorioVazio;
+	}
+
 }

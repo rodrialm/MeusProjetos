@@ -40,17 +40,28 @@
 			<Insets top="20" bottom="0" />
 		</GridPane.margin>
 	</Button>
-	<Button text="Selecionar Diretório" 
-		styleClass="button" GridPane.columnIndex="8" GridPane.rowIndex="8"
-		GridPane.columnSpan="2" onAction="#selecionarDiretorio">
+	<Button text="Selecionar Diretório" styleClass="button"
+		GridPane.columnIndex="8" GridPane.rowIndex="8" GridPane.columnSpan="2"
+		onAction="#selecionarDiretorio">
 		<GridPane.margin>
 			<Insets top="10" bottom="20" />
 		</GridPane.margin>
 	</Button>
 
-	<Button text="Ler Arquivo" styleClass="forma-botao" fx:id="botaoLeitura"
-		GridPane.columnIndex="8" GridPane.rowIndex="9" GridPane.columnSpan="2"
-		GridPane.valignment="CENTER" disable="true" onAction="#lerArquivo">
+	<Button text="Ler Arquivo" styleClass="forma-botao"
+		fx:id="botaoLeitura" GridPane.columnIndex="8" GridPane.rowIndex="9"
+		GridPane.columnSpan="2" GridPane.valignment="CENTER" disable="true"
+		onAction="#lerArquivo">
+
+		<GridPane.margin>
+			<Insets top="20" bottom="0" />
+		</GridPane.margin>
+	</Button>
+
+	<Button text="Ver Resultado" styleClass="forma-botao"
+		fx:id="botaoMudarCena" GridPane.columnIndex="10" GridPane.rowIndex="9"
+		GridPane.columnSpan="2" GridPane.valignment="CENTER"
+		onAction="#setCenaCarregamentoTela">
 
 		<GridPane.margin>
 			<Insets top="20" bottom="0" />

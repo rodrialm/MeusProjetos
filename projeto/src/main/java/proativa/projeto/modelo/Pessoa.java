@@ -29,6 +29,9 @@ public class Pessoa {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
-	
+		// Fazendo adicionar .PDF no nome Procurado (no caso o arquivo teria CPF como nome)
+	@Override
+	public String toString() {
+		return cpf + ".pdf";
+	}
 }

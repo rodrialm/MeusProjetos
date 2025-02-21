@@ -1,59 +1,63 @@
 package proativa.projeto.visao;
 
+import java.io.IOException;
+
 import javafx.application.Application;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import proativa.projeto.modelo.Controlador;
+import proativa.projeto.modelo.ControladorCarregamento;
 
-public class Aplicacao extends Application{
-	
+public class Aplicacao extends Application {
+
+	private Stage primaryStage;
 	private Parent raiz;
-	private Parent carregamento;
+//	private Parent carregamento;
 	private String arquivosCSS;
 	private Stage janela;
 	private Scene cenaPrincipal;
-	private Scene cenaCarregamento;
+//	private Scene cenaCarregamento;
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		
-		arquivosCSS = getClass().getResource("Layout.css").toExternalForm();
-		raiz = FXMLLoader.load(getClass().getResource("proativa.fxml"));
-		carregamento = FXMLLoader.load(getClass().getResource("carregamento.fxml"));
-		
-		janela = primaryStage;
-		
-		criarCenaPrincipal();
-		criarCenaCarregamento();
+		this.primaryStage = primaryStage;
 
-		
+		carregarCena("proativa.fxml", ".::PROIMPORTAPONTO::.");
+	}
+
+	public void carregarCena(String fxml, String titulo) {
+		try {
+			arquivosCSS = getClass().getResource("Layout.css").toExternalForm();
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("proativa.fxml"));
+			raiz = loader.load();
+
+			janela = primaryStage;
+
+			janela.setTitle("Proativa");
+			janela.setScene(cenaPrincipal);
+
+			cenaPrincipal = new Scene(raiz, 900, 600);
+			cenaPrincipal.getStylesheets().add(arquivosCSS);
+
 //		primaryStage.setMaximized(true);;
-		janela.setTitle(".::PROIMPORTAPONTO::.");
-		janela.setScene(cenaPrincipal);
-		janela.show();
+			janela.setTitle(".::PROIMPORTAPONTO::.");
+			janela.setScene(cenaPrincipal);
+			janela.show();
+
+			Object controlador = loader.getController();
+			if (controlador instanceof Controlador) {
+				((Controlador) controlador).setMainApp(this);
+			} else if (controlador instanceof ControladorCarregamento) {
+				((ControladorCarregamento) controlador).setMainApp(this);
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
-	
-	@FXML
-	private void criarCenaPrincipal() {
-		janela.setTitle("Proativa");
-		janela.setScene(cenaPrincipal);
-		
-		cenaPrincipal = new Scene(raiz, 900, 600);
-		cenaPrincipal.getStylesheets().add(arquivosCSS);
-	}
-	@FXML
-	private void criarCenaCarregamento() {
-		janela.setScene(cenaCarregamento);
-		janela.setTitle("Proativa");
-		
-		cenaCarregamento= new Scene(carregamento,900,600);
-		cenaCarregamento.getStylesheets().add(arquivosCSS);
-		
-	}
-	
-	
+
 	public static void main(String[] args) {
 		launch(args);
 	}

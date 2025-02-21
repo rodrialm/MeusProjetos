@@ -1,17 +1,28 @@
 package proativa.projeto.modelo;
 
+import java.io.IOException;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
+import javafx.stage.Stage;
+import proativa.projeto.visao.Aplicacao;
 
 public class Controlador {
+	private Aplicacao aplicacao;
 	Arquivo arquivo = new Arquivo();
 	ProcurarDiretorio diretorio = new ProcurarDiretorio();
 	
-
+	
 	@FXML
 	Button botaoLeitura;
+	
+	@FXML
+	Button botaoMudarCena;
 
 	@FXML
 	private TextArea campoTextoArquivo;
@@ -19,50 +30,81 @@ public class Controlador {
 	@FXML
 	private TextArea campoTextoPasta;
 
-	
-	private boolean campoArquivoVazio;
-	private boolean campoDiretorioVazio;
-	
-	@FXML
+	boolean campoDiretorioVazio = diretorio.isCampoDiretorioVazio();
+	boolean campoArquivoVazio = arquivo.isCampoArquivoVazio();
+
 	public void procurarArquivo(ActionEvent event) {
 
 		// Pega um arquivo e chama um metado para abrir Windows Explorer para procurar
 		arquivo.buscarArquivo(event);
-		if (campoTextoArquivo.getText().equalsIgnoreCase("selecione o arquivo!")) {
+		setCamposSeVazios();
+		if (campoDiretorioVazio) {
 			campoTextoArquivo.setText(arquivo.getNome());
-			if(campoTextoPasta.getText().equalsIgnoreCase("selecione o diretório")) {
-				botaoLeitura.setDisable(false);
-			}
+			setCamposSeVazios();
 		} else {
 			campoTextoArquivo.setText("selecione o arquivo!");
 		}
-		System.out.println(campoTextoArquivo.getText());
+		// habilita o Botao caso os arquivos estejam selecionados
+		if (!campoArquivoVazio && !campoDiretorioVazio) {
+			botaoLeitura.setDisable(false);
+		} else {
+			botaoLeitura.setDisable(true);
+		}
+		setCamposSeVazios();
 	}
 
 	@FXML
 	public void selecionarDiretorio(ActionEvent event) {
+		setCamposSeVazios();
 
 		diretorio.procurarDiretorio(event);
-		if (campoTextoPasta.getText().equalsIgnoreCase("selecione o diretório")) {
-			campoTextoPasta.setText(diretorio.getCaminhoDiretorio());
-			if(campoTextoArquivo.getText().equalsIgnoreCase("selecione o diretório")) {
-				botaoLeitura.setDisable(false);
-			}
+		campoTextoPasta.setText(diretorio.getCaminhoDiretorio());
+		if (campoDiretorioVazio) {
+			setCamposSeVazios();
 		} else {
 			campoTextoPasta.setText("selecione o diretório");
 		}
-		System.out.println(campoTextoPasta.getText());
+		if (!campoArquivoVazio && !campoDiretorioVazio) {
+			botaoLeitura.setDisable(false);
+		} else {
+			botaoLeitura.setDisable(true);
+		}
+		setCamposSeVazios();
+	}
+	
+	 public void setMainApp(Aplicacao mainApp) {
+	        this.aplicacao = mainApp;
+	    }
+	
+	@FXML
+	public void setCenaCarregamentoTela () throws IOException{
+		
+		aplicacao.carregarCena("/views/second.fxml", "Segunda Cena");
+//		FXMLLoader loader = new FXMLLoader(getClass().getResource("proativa/projeto/visao/carregamento.fxml"));
+//		Parent carregamento = loader.load();
+//		String arquivosCSS = getClass().getResource("Layout.css").toExternalForm();
+//		
+//		Stage stage = (Stage) botaoMudarCena.getScene().getWindow();
+//		
+//		stage.setScene(new Scene( carregamento, 900, 600));
+//		stage.setTitle(".::ARQUIVO_CARREGADO::.");
+//		
+//		
+//		carregamento.getStylesheets().add(arquivosCSS);
 	}
 
 	@FXML
 	public void lerArquivo() {
 		arquivo.lerArquivo();
-
 	}
 
 	@FXML
 	public void fechar() {
 		System.exit(0);
 	}
-
+	// Coloquei esse metodo para colocar se os campos estão vazios antes e depois de cada metodo executado
+	private void setCamposSeVazios() {
+		campoDiretorioVazio = diretorio.isCampoDiretorioVazio();
+		campoArquivoVazio = arquivo.isCampoArquivoVazio();
+	}
 }
