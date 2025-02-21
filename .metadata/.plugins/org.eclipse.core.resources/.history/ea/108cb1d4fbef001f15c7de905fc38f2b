@@ -1,0 +1,79 @@
+.backgoundPrincipal{
+	-fx-background-color: linear-gradient(rgb(20, 136, 204), rgb(43, 50, 178));
+}
+
+.tituloPrincipal{
+	-fx-font-size: 35px;
+	-fx-text-fill: #FFF;
+}
+
+.mensagemFormatoArquivo{
+	-fx-font-size: 21px;
+	-fx-text-fill: #FFF;
+}
+
+.forma-botao{
+	-fx-font-size: 16px;
+}
+
+.campo-texto{
+	-fx-max-width: 250;
+	-fx-max-height: 20;
+	-fx-font-size: 14px;
+}
+
+
+.tituloPrincipal {
+    -fx-font-family: 'Arial', sans-serif;
+   -fx- background: linear-gradient(to bottom, #0072ff, #00c6ff);
+   -fx- color: white;
+   -fx- text-align: center;
+   -fx- margin: 0;
+   -fx- padding: 0;
+}
+
+.h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.button {
+    background: #ffffff;
+    border: none;
+    color: #0072ff;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.button:hover {
+    background: #00c6ff;
+    color: white;
+    transform: scale(1.05);
+}
+
+.button:disabled {
+    background: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+}
+
+.input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 60%;
+    max-width: 300px;
+    font-size: 1em;
+    text-align: center;
+}

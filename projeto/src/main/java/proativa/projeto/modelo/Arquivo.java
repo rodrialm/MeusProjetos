@@ -7,7 +7,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import javafx.event.ActionEvent;
@@ -17,7 +20,7 @@ import javafx.stage.Stage;
 public class Arquivo {
 
 	private String nomeArquivo;
-	File arquivoSelecionado;
+	private File arquivoSelecionado;
 
 	List<Pessoa> pessoas = new ArrayList<>();
 
@@ -28,7 +31,8 @@ public class Arquivo {
 	public Arquivo(ActionEvent event) throws Exception {
 		buscarArquivo(event);
 	}
-
+	
+	// Selecionar um arquivo pelo Windows Explorer
 	public void buscarArquivo(ActionEvent event) {
 
 		try {
@@ -41,17 +45,20 @@ public class Arquivo {
 			nomeArquivo = arquivoSelecionado.getName();
 
 		} catch (Exception e) {
-			System.out.println(e.getMessage());
+			nomeArquivo = "selecione o arquivo!";
 		}
 
 	}
-
+	
+	// Trata um arquivo se ele for .XLS ou .XLSX
 	public void lerArquivo() {
-		boolean filtroCpfEmail;
+		
+		// FiltroColunaCpf foi um jeito de escolher a coluna CPF
+		boolean filtroColunaCpf;
 		String cpf;
 		String email;
 		String nomeCelula;
-		int contador = 0;
+//		int contador = 0;
 
 		try (FileInputStream arquivo = new FileInputStream(arquivoSelecionado)) {
 			Workbook workbook;
@@ -73,26 +80,23 @@ public class Arquivo {
 					rowIndex++;
 					continue;
 				}
-				Cell celula = linha.getCell(3);
-//				 for (Cell celula : linha) {
+				
+				 for (Cell celula : linha) {
 
 				nomeCelula = celula.getAddress().toString();
-				filtroCpfEmail = nomeCelula.toUpperCase().startsWith("D");
+				filtroColunaCpf = nomeCelula.toUpperCase().startsWith("D");
 
-				if (filtroCpfEmail) {
+				if (filtroColunaCpf) {
 					switch (celula.getCellType()) {
 
 					case STRING:
-//							 System.out.println(celula.getStringCellValue());
-						System.out.println(linha.getCell(0) + "| " + linha.getCell(1));
-						cpf = linha.getCell(3).toString();
-						email = linha.getCell(4).toString();
-						System.out.println(cpf + " | " + email);
-						Pessoa pessoa = new Pessoa();
+						cpf = linha.getCell(3).toString();  // Seleciona a coluna de indice 3
+						email = linha.getCell(4).toString(); // Seleciona a coluna de indice 4
+						Pessoa pessoa = new Pessoa(cpf , email);
 						pessoas.add(pessoa);
-						System.out.print(" ===> " + contador + "\n");
 
-						contador++;
+//						System.out.println(cpf + " | " + email);  // para ver ser está pegando as informações coretas
+//						contador++;
 						break;
 
 					case NUMERIC:
@@ -111,12 +115,12 @@ public class Arquivo {
 //						System.out.print("Desconhecido \t");
 
 					}
-//				 }
+				 }
 //				 System.out.println();
 					rowIndex++;
 				}
 			}
-			System.out.println("Quatidade de CPFs:  " + contador);
+//			System.out.println("Linhas percorridas:  " + contador); // para ver quantas linhas percorreu
 			workbook.close();
 
 		} catch (IOException e) {
@@ -126,10 +130,6 @@ public class Arquivo {
 	}
 
 	public String getNome() {
-		if (nomeArquivo != null) {
 			return nomeArquivo;
-		} else {
-			return "Arquivo não selecionado!";
 		}
-	}
 }

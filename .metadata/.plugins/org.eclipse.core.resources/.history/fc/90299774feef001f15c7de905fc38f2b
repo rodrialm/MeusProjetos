@@ -1,0 +1,43 @@
+package proativa.projeto.modelo;
+
+import java.io.File;
+
+import javafx.event.ActionEvent;
+import javafx.stage.DirectoryChooser;
+import javafx.stage.Stage;
+
+public class ProcurarPasta {
+	
+		private String caminhoPasta;
+	
+	public void SelecionarPasta(ActionEvent event) {
+		DirectoryChooser selecionarPasta = new DirectoryChooser();
+		selecionarPasta.setTitle("Selecione uma pasta");
+		
+		String userHome = System.getProperty("user.home");
+		File downloadsDir = new File(userHome, "Downloads");
+		
+		if (downloadsDir.exists() && downloadsDir.isDirectory()) {
+			selecionarPasta.setInitialDirectory(downloadsDir);
+		} else {
+			
+			selecionarPasta.setInitialDirectory(new File(userHome));
+		}
+		
+		Stage palco = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
+		File pastaSelecionada = selecionarPasta.showDialog(palco);
+		
+			
+		try {
+		
+
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+
+	}
+	
+	public void getCaminhoPasta() {
+		
+	}
+}

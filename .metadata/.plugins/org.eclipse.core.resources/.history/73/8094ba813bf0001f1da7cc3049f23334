@@ -1,0 +1,132 @@
+package proativa.projeto.modelo;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+import javafx.event.ActionEvent;
+import javafx.stage.FileChooser;
+import javafx.stage.Stage;
+
+public class Arquivo {
+
+	private String nomeArquivo;
+	private File arquivoSelecionado;
+
+	List<Pessoa> pessoas = new ArrayList<>();
+
+	public Arquivo() {
+
+	}
+
+	public Arquivo(ActionEvent event) throws Exception {
+		buscarArquivo(event);
+	}
+	
+	// Selecionar um arquivo pelo Windows Explorer
+	public void buscarArquivo(ActionEvent event) {
+
+		try {
+			FileChooser selecionarArquivo = new FileChooser();
+			selecionarArquivo.setTitle("Selecionar Arquivo Excel");
+			selecionarArquivo.getExtensionFilters()
+					.addAll(new FileChooser.ExtensionFilter("Arquivos Excel", "*.xls", "*.xlsx"));
+			Stage stage = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
+			arquivoSelecionado = selecionarArquivo.showOpenDialog(stage);
+			nomeArquivo = arquivoSelecionado.getName();
+
+		} catch (Exception e) {
+			nomeArquivo = "Nenhum arquivo selecionado!";
+		}
+
+	}
+	
+	// Trata um arquivo se ele for .XLS ou .XLSX
+	public void lerArquivo() {
+		
+		// FiltroColunaCpf foi um jeito de escolher a coluna CPF
+		boolean filtroColunaCpf;
+		String cpf;
+		String email;
+		String nomeCelula;
+		int contador = 0;
+
+		try (FileInputStream arquivo = new FileInputStream(arquivoSelecionado)) {
+			Workbook workbook;
+			if (nomeArquivo.endsWith(".xlsx")) {
+				workbook = new XSSFWorkbook(arquivo);
+			} else {
+				workbook = new HSSFWorkbook(arquivo);
+			}
+
+			Sheet sheet = workbook.getSheetAt(0);
+
+			int rowIndex = 0;
+
+			for (Row linha : sheet) {
+
+				// Pula a primeira linha da planilha
+
+				if (rowIndex == 0) {
+					rowIndex++;
+					continue;
+				}
+				
+				 for (Cell celula : linha) {
+
+				nomeCelula = celula.getAddress().toString();
+				filtroColunaCpf = nomeCelula.toUpperCase().startsWith("D");
+
+				if (filtroColunaCpf) {
+					switch (celula.getCellType()) {
+
+					case STRING:
+						cpf = linha.getCell(3).toString();  // Seleciona a coluna de indice 3
+						email = linha.getCell(4).toString(); // Seleciona a coluna de indice 4
+//						System.out.println(cpf + " | " + email);  // para ver ser está pegando as informações coretas
+						Pessoa pessoa = new Pessoa(cpf , email);
+						pessoas.add(pessoa);
+
+						contador++;
+						break;
+
+					case NUMERIC:
+//						 System.out.print(celula.getNumericCellValue() + " | \t");
+						break;
+
+					case BOOLEAN:
+//						 System.out.print(celula.getBooleanCellValue() + " | \t");
+						break;
+
+					case FORMULA:
+//						 System.out.print(celula.getCellFormula() + " | \t");
+						break;
+
+					default:
+//						System.out.print("Desconhecido \t");
+
+					}
+				 }
+//				 System.out.println();
+					rowIndex++;
+				}
+			}
+//			System.out.println("Linhas percorridas:  " + contador); // para ver quantas linhas percorreu
+			workbook.close();
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	public String getNome() {
+			return nomeArquivo;
+		}
+}

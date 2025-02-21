@@ -1,0 +1,83 @@
+package proativa.projeto.modelo;
+
+import java.io.File;
+
+import javafx.event.ActionEvent;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
+import javafx.stage.DirectoryChooser;
+import javafx.stage.Stage;
+
+public class ProcurarDiretorio {
+	
+		private String caminhoDiretorio;
+		private String nomeArquivoParaProcurar;
+		
+		public ProcurarDiretorio() {
+			
+		}
+	
+	public ProcurarDiretorio(String caminhoPasta, String nomeArquivoParaProcurar) {
+			super();
+			this.caminhoDiretorio = caminhoPasta;
+			this.nomeArquivoParaProcurar = nomeArquivoParaProcurar;
+		}
+
+	public void procurarDiretorio(ActionEvent event) {
+		
+		try {
+			DirectoryChooser selecionarDiretorio = new DirectoryChooser();
+			selecionarDiretorio.setTitle("Selecione uma pasta");
+			
+			String userHome = System.getProperty("user.home");
+			File downloadsDir = new File(userHome, "Downloads");
+			
+			if (downloadsDir.exists() && downloadsDir.isDirectory()) {
+				selecionarDiretorio.setInitialDirectory(downloadsDir);
+			} else {
+				
+				selecionarDiretorio.setInitialDirectory(new File(userHome));
+			}
+			
+			Stage palco = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
+			File diretorioSelecionada = selecionarDiretorio.showDialog(palco);
+			caminhoDiretorio = diretorioSelecionada.getPath();
+		} catch (Exception e) {
+			caminhoDiretorio = "Nenhuma pasta selecionada!";
+		}
+	}
+	
+	public File percorrerDiretorio(File diretorio, String nomeArquivo) {
+		if ( diretorio.isDirectory()) {
+			File[] arquivos = diretorio.listFiles();
+			if (arquivos != null) {
+				for(File arquivo: arquivos) {
+					if(arquivo.isFile() && arquivo.getName().equals(nomeArquivo)) {
+						return arquivo;
+					}
+				}
+			}
+		}
+		return null;
+	}
+	
+	 // Método para exibir um alerta
+    private void showAlert(String message) {
+        Alert alert = new Alert(AlertType.INFORMATION);
+        alert.setTitle("Informação");
+        alert.setHeaderText(null);
+        alert.setContentText(message);
+        alert.showAndWait();
+    }
+	
+	public String getCaminhoDiretorio() {
+		return caminhoDiretorio;
+	}
+
+
+	public String getNomeArquivoParaProcurar() {
+		return nomeArquivoParaProcurar;
+	}
+	
+	
+}
