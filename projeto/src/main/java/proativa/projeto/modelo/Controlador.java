@@ -4,12 +4,10 @@ import java.io.IOException;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.TableView;
 import javafx.scene.control.TextArea;
-import javafx.stage.Stage;
 import proativa.projeto.visao.Aplicacao;
 
 public class Controlador {
@@ -23,44 +21,54 @@ public class Controlador {
 	
 	@FXML
 	Button botaoMudarCena;
-
+	
 	@FXML
 	private TextArea campoTextoArquivo;
-
+	
 	@FXML
 	private TextArea campoTextoPasta;
 
+	@FXML
+	private TextArea primeiraColuna;
+
+	@FXML
+	private TextArea segundaColuna;
+	
+	@FXML
+	private TableView<Arquivo> tabela;
+
 	boolean campoDiretorioVazio = diretorio.isCampoDiretorioVazio();
 	boolean campoArquivoVazio = arquivo.isCampoArquivoVazio();
+	
 
 	public void procurarArquivo(ActionEvent event) {
 
 		// Pega um arquivo e chama um metado para abrir Windows Explorer para procurar
 		arquivo.buscarArquivo(event);
-		setCamposSeVazios();
+		getCamposSeVazios();
 		if (campoDiretorioVazio) {
 			campoTextoArquivo.setText(arquivo.getNome());
-			setCamposSeVazios();
+			getCamposSeVazios();
 		} else {
 			campoTextoArquivo.setText("selecione o arquivo!");
 		}
 		// habilita o Botao caso os arquivos estejam selecionados
-		if (!campoArquivoVazio && !campoDiretorioVazio) {
+		if (!campoArquivoVazio) { 				// adicione  && !campoDiretorioVazio se quiser checar os dois campos
 			botaoLeitura.setDisable(false);
 		} else {
 			botaoLeitura.setDisable(true);
 		}
-		setCamposSeVazios();
+		getCamposSeVazios();
 	}
 
 	@FXML
 	public void selecionarDiretorio(ActionEvent event) {
-		setCamposSeVazios();
+		getCamposSeVazios();
 
 		diretorio.procurarDiretorio(event);
 		campoTextoPasta.setText(diretorio.getCaminhoDiretorio());
 		if (campoDiretorioVazio) {
-			setCamposSeVazios();
+			getCamposSeVazios();
 		} else {
 			campoTextoPasta.setText("selecione o diretório");
 		}
@@ -69,42 +77,74 @@ public class Controlador {
 		} else {
 			botaoLeitura.setDisable(true);
 		}
-		setCamposSeVazios();
+		getCamposSeVazios();
 	}
 	
 	 public void setMainApp(Aplicacao mainApp) {
-	        this.aplicacao = mainApp;
+	        aplicacao = mainApp;
 	    }
 	
 	@FXML
 	public void setCenaCarregamentoTela () throws IOException{
 		
-		aplicacao.carregarCena("/views/second.fxml", "Segunda Cena");
-//		FXMLLoader loader = new FXMLLoader(getClass().getResource("proativa/projeto/visao/carregamento.fxml"));
-//		Parent carregamento = loader.load();
-//		String arquivosCSS = getClass().getResource("Layout.css").toExternalForm();
-//		
-//		Stage stage = (Stage) botaoMudarCena.getScene().getWindow();
-//		
-//		stage.setScene(new Scene( carregamento, 900, 600));
-//		stage.setTitle(".::ARQUIVO_CARREGADO::.");
-//		
-//		
-//		carregamento.getStylesheets().add(arquivosCSS);
+		try {
+			aplicacao.carregarCenaCarregamento();
+		} catch (Exception e) {
+//			e.printStackTrace();
+			System.out.println(e.getMessage());
+		}
+
 	}
 
 	@FXML
 	public void lerArquivo() {
-		arquivo.lerArquivo();
+		if(arquivo != null) {
+			
+			setNumeroDasColunasASeremFiltradas();
+			// chama um metodo dentro de arquivo para fazer leitura e filtro das 2 colunas selecionadas
+			arquivo.lerArquivo();
+			// essa parte aqui foi um jeito de jogar os dados lidos em uma lista unica
+			arquivo.setDadosPessoas();
+			// chama a tela Resultado
+			if(!arquivo.pessoas.isEmpty())
+			botaoMudarCena.setDisable(false);
+		}
 	}
+	
 
 	@FXML
 	public void fechar() {
 		System.exit(0);
 	}
 	// Coloquei esse metodo para colocar se os campos estão vazios antes e depois de cada metodo executado
-	private void setCamposSeVazios() {
+	private void getCamposSeVazios() {
 		campoDiretorioVazio = diretorio.isCampoDiretorioVazio();
 		campoArquivoVazio = arquivo.isCampoArquivoVazio();
+	}
+	
+	private void setNumeroDasColunasASeremFiltradas () {
+		
+			try {
+				int numero = Integer.parseInt(primeiraColuna.getText());
+				arquivo.setNumDaColunaFiltrada1(numero);
+				int numero2 = Integer.parseInt(segundaColuna.getText());
+				arquivo.setNumDaColunaFiltrada2(numero2);
+			} catch (NumberFormatException e) {
+				Alert erroDeColunas = new Alert(Alert.AlertType.ERROR);
+				erroDeColunas.setTitle("Erro Colunas");
+				erroDeColunas.setHeaderText("Uma ou mais Colunas não encontradas!");
+				erroDeColunas.setContentText("Por favor, digite um número válido.");
+				erroDeColunas.showAndWait();
+			}
+	}
+	
+	@FXML
+	private void limparPrimeiraColuna() {
+		primeiraColuna.clear();
+	}
+	
+	@FXML
+	private void limparSegundaColuna() {
+		segundaColuna.clear();
 	}
 }

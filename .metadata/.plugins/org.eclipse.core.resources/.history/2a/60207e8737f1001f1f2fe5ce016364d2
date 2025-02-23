@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="proativa.projeto.modelo.ControladorCarregamento"
+             prefWidth="600" prefHeight="400">
+    <children>
+        <VBox alignment="CENTER" spacing="20" AnchorPane.topAnchor="50" AnchorPane.leftAnchor="50"
+              AnchorPane.rightAnchor="50" AnchorPane.bottomAnchor="50">
+            <Label text="RESULTADO:" styleClass="label-title"/>
+            <TextField text="selecione o arquivo!" editable="false" styleClass="text-field-custom"/>
+            <HBox spacing="20" alignment="CENTER">
+                <Button text="Fazer Nova Consulta" styleClass="button-disabled"/>
+                <Button text="Finalizar" onAction="#fechar" styleClass="button-primary"/>
+            </HBox>
+        </VBox>
+    </children>
+</AnchorPane>
+
+    
+

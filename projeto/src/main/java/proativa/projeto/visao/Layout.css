@@ -34,6 +34,12 @@
     -fx-font-weight: bold;
 }
 
+.label-numero {
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
 .button {
     -fx-background-color: white;
     -fx-text-fill: #0072ff;
@@ -68,6 +74,17 @@
     -fx-font-family: "Verdana"; /* Fonte personalizada */
     -fx-text-alignment: center;
     -fx-pref-width: 300px;
+}
+
+.text-field-numero {
+    -fx-padding: 10px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-border-color: transparent;
+    -fx-font-size: 14px;
+    -fx-font-family: "Verdana"; /* Fonte personalizada */
+    -fx-text-alignment: center;
+	 -fx-pref-width: 85px;
 }
 
 

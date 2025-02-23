@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;proativa.projeto.modelo.DadosPessoas&apos; to &apos;DadosPessoasServicos&apos;&#x0D;&#x0A;- Original project: &apos;projeto&apos;&#x0D;&#x0A;- Original element: &apos;proativa.projeto.modelo.DadosPessoas&apos;&#x0D;&#x0A;- Renamed element: &apos;proativa.projeto.modelo.DadosPessoasServicos&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;DadosPessoas&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;proativa.projeto.modelo{DadosPessoas.java[DadosPessoas" matchStrategy="1" name="DadosPessoasServicos" qualified="false" references="true" similarDeclarations="false" stamp="1740277526772" textual="false" version="1.0"/>
+</session>

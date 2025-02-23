@@ -1,37 +1,44 @@
 package proativa.projeto.modelo;
 
+import javafx.beans.property.SimpleStringProperty;
+
 public class Pessoa {
 	
-	String cpf;
-	String email;
+	SimpleStringProperty nome;
+
+	SimpleStringProperty email;
 	
 	public Pessoa() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Pessoa(String cpf, String email) {
-		this.cpf = cpf;
-		this.email = email;
+	public Pessoa(String nome, String email) {
+		this.nome = new SimpleStringProperty (nome);
+		this.email =new SimpleStringProperty (email);
 	}
 
-	public String getCpf() {
-		return cpf;
+	public String getNome() {
+		return nome.get();
 	}
 
-	public void setCpf(String cpf) {
-		this.cpf = cpf;
+	public void setNome(String nome) {
+		this.nome.set(nome);
 	}
 
 	public String getEmail() {
-		return email;
+		return email.get();
 	}
 
 	public void setEmail(String email) {
-		this.email = email;
+		this.email.set(email);;
 	}
 		// Fazendo adicionar .PDF no nome Procurado (no caso o arquivo teria CPF como nome)
-	@Override
-	public String toString() {
-		return cpf + ".pdf";
+//	@Override
+//	public String toString() {
+//		return nome;
+//	}
+	
+	public SimpleStringProperty nomeProperty() {
+		return nome;
 	}
 }

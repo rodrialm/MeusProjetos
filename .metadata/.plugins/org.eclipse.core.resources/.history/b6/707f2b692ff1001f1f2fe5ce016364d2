@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="proativa.projeto.modelo.ControladorCarregamento"
+	styleClass="backgoundPrincipal" hgap="15" vgap="15">
+
+	<padding>
+		<Insets left="30" right="40" top="40" bottom="40" />
+	</padding>
+
+	<columnConstraints>
+		<ColumnConstraints minWidth="60" prefWidth="60" />
+
+
+	</columnConstraints>
+
+	<Label text="RESULTADO:" styleClass="tituloPrincipal"
+		GridPane.columnIndex="7" GridPane.rowIndex="1" GridPane.columnSpan="4"
+		GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+
+	</Label>
+
+	
+	
+
+	<Button text="Fazer Nova Consulta" styleClass="forma-botao"
+		 GridPane.columnIndex="8" GridPane.rowIndex="9"
+		GridPane.columnSpan="2" GridPane.valignment="CENTER" disable="true"
+		>
+
+		<GridPane.margin>
+			<Insets top="20" bottom="0" />
+		</GridPane.margin>
+	</Button>
+
+	<Button text="Finalizar" styleClass="forma-botao"
+		 GridPane.columnIndex="10" GridPane.rowIndex="9"
+		GridPane.columnSpan="2" GridPane.valignment="CENTER"
+		>
+
+		<GridPane.margin>
+			<Insets top="20" bottom="0" />
+		</GridPane.margin>
+	</Button>
+	<GridPane styleClass="campo-texto" GridPane.columnIndex="10"
+		GridPane.rowIndex="7" GridPane.halignment="CENTER">
+		<TextArea styleClass="text-field" text="selecione o arquivo!"
+			editable="false" >
+		</TextArea>
+	</GridPane>
+
+</GridPane>
+
+    
+

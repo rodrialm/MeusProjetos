@@ -31,15 +31,12 @@
     <fullyQualifiedTypeName name="javafx.event.ActionEvent"/>
     <fullyQualifiedTypeName name="proativa.projeto.modelo.ProcurarPasta"/>
     <fullyQualifiedTypeName name="java.awt.Button"/>
-    <fullyQualifiedTypeName name="javafx.scene.control.Alert"/>
-    <fullyQualifiedTypeName name="javafx.scene.control.Alert.AlertType"/>
     <fullyQualifiedTypeName name="java.io.File"/>
     <fullyQualifiedTypeName name="proativa.projeto.modelo.Arquivo"/>
     <fullyQualifiedTypeName name="proativa.projeto.modelo.Pessoa"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="javafx.scene.Scene"/>
-    <fullyQualifiedTypeName name="javafx.fxml.FXML"/>
     <fullyQualifiedTypeName name="javafx.scene.control.TableView"/>
     <fullyQualifiedTypeName name="javafx.scene.control.Button"/>
     <fullyQualifiedTypeName name="javafx.scene.Parent"/>
@@ -49,4 +46,9 @@
     <fullyQualifiedTypeName name="proativa.projeto.modelo.Controlador"/>
     <fullyQualifiedTypeName name="proativa.projeto.visao.Aplicacao"/>
     <fullyQualifiedTypeName name="proativa.projeto.modelo.ControladorCarregamento"/>
+    <fullyQualifiedTypeName name="javafx.beans.property.SimpleStringProperty"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.Alert"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.Alert.AlertType"/>
+    <fullyQualifiedTypeName name="javafx.fxml.FXML"/>
+    <fullyQualifiedTypeName name="javafx.scene.control.TextArea"/>
 </qualifiedTypeNameHistroy>

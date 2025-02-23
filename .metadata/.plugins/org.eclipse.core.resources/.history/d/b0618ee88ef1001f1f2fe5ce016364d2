@@ -1,0 +1,30 @@
+package proativa.projeto.modelo;
+
+import java.util.List;
+
+public class DadosPessoasServicos {
+
+    // Instância única da classe
+    private static final DataService INSTANCE = new DataService();
+
+    // Lista de pessoas
+    private List<Pessoa> pessoas;
+
+    // Construtor privado para evitar instanciação externa
+    private DataService() {
+    }
+
+    // Método para obter a instância única
+    public static DataService getInstance() {
+        return INSTANCE;
+    }
+
+    // Getters e Setters
+    public List<Pessoa> getPessoas() {
+        return pessoas;
+    }
+
+    public void setPessoas(List<Pessoa> pessoas) {
+        this.pessoas = pessoas;
+    }
+}

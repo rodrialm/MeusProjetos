@@ -1,4 +1,4 @@
-!SESSION 2025-02-19 06:10:08.881 -----------------------------------------------
+!SESSION 2025-02-23 09:06:35.588 -----------------------------------------------
 eclipse.buildId=4.34.0.20241128-0756
 java.version=23.0.1
 java.vendor=Oracle Corporation
@@ -6,11 +6,11 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
 Framework arguments:  -product org.eclipse.epp.package.jee.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
 
-This is a continuation of log file C:\Users\rodri\Desktop\Projetos\proativa\.metadata\.bak_6.log
-Created Time: 2025-02-19 07:57:59.918
+This is a continuation of log file C:\Projetos\proativa\.metadata\.bak_6.log
+Created Time: 2025-02-23 11:24:02.106
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.918
-!MESSAGE Unexpected symbol '|' in path "java.base|sun/nio/fs/FileOwnerAttributeViewImpl.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.106
+!MESSAGE Unexpected symbol '|' in path "java.xml|com/sun/org/apache/bcel/internal/generic/INVOKESPECIAL.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -72,8 +72,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.918
-!MESSAGE Unexpected symbol '|' in path "java.desktop|javax/imageio/plugins/tiff/ExifTIFFTagSet$ApertureValue.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.107
+!MESSAGE Unexpected symbol '|' in path "java.desktop|sun/awt/image/GifImageDecoder.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -135,8 +135,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.918
-!MESSAGE Unexpected symbol '|' in path "jdk.internal.vm.ci|jdk/vm/ci/hotspot/HotSpotJVMCIReflection.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.107
+!MESSAGE Unexpected symbol '|' in path "java.base|sun/nio/fs/WindowsLinkSupport.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -198,8 +198,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.919
-!MESSAGE Unexpected symbol '|' in path "java.base|sun/security/ssl/ECDHClientKeyExchange$ECDHEClientKeyExchangeConsumer.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.108
+!MESSAGE Unexpected symbol '|' in path "java.desktop|com/sun/media/sound/InvalidFormatException.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -261,8 +261,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.919
-!MESSAGE Unexpected symbol '|' in path "java.base|java/lang/invoke/DirectMethodHandle.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.108
+!MESSAGE Unexpected symbol '|' in path "jdk.localedata|sun/util/resources/cldr/ext/CurrencyNames_yrl_VE.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -324,8 +324,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.919
-!MESSAGE Unexpected symbol '|' in path "java.base|sun/security/ssl/SSLConfiguration$CustomizedServerSignatureSchemes.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.108
+!MESSAGE Unexpected symbol '|' in path "java.desktop|com/sun/media/sound/DLSSampleLoop.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -387,8 +387,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.920
-!MESSAGE Unexpected symbol '|' in path "java.base|jdk/internal/org/objectweb/asm/CurrentFrame.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.109
+!MESSAGE Unexpected symbol '|' in path "java.xml|com/sun/org/apache/xalan/internal/xsltc/compiler/AttributeValueTemplate.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -450,8 +450,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.920
-!MESSAGE Unexpected symbol '|' in path "jdk.jdi|com/sun/tools/jdi/JDWP$StackFrame$GetValues$SlotInfo.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.109
+!MESSAGE Unexpected symbol '|' in path "jdk.internal.jvmstat|sun/jvmstat/perfdata/monitor/PerfDataBufferImpl.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -513,8 +513,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.920
-!MESSAGE Unexpected symbol '|' in path "java.desktop|javax/imageio/plugins/tiff/TIFFDirectory.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.109
+!MESSAGE Unexpected symbol '|' in path "java.base|java/util/stream/DoublePipeline.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -576,8 +576,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.920
-!MESSAGE Unexpected symbol '|' in path "jdk.localedata|sun/util/resources/cldr/ext/CurrencyNames_sc.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.109
+!MESSAGE Unexpected symbol '|' in path "java.base|sun/security/ec/ECDSASignature$SHA512inP1363Format.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -639,8 +639,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.921
-!MESSAGE Unexpected symbol '|' in path "jdk.hotspot.agent|sun/jvm/hotspot/ci/ciKlass.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.110
+!MESSAGE Unexpected symbol '|' in path "jdk.javadoc|jdk/javadoc/internal/doclets/formats/html/AllClassesIndexWriter.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -702,8 +702,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.921
-!MESSAGE Unexpected symbol '|' in path "java.management|sun/management/ThreadInfoCompositeData.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.110
+!MESSAGE Unexpected symbol '|' in path "jdk.internal.jvmstat|sun/jvmstat/perfdata/monitor/protocol/local/PerfDataFile.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -765,8 +765,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.921
-!MESSAGE Unexpected symbol '|' in path "java.xml|com/sun/org/apache/xerces/internal/dom/AbortException.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.110
+!MESSAGE Unexpected symbol '|' in path "jdk.internal.le|jdk/internal/org/jline/reader/impl/completer/AggregateCompleter.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -828,8 +828,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.922
-!MESSAGE Unexpected symbol '|' in path "java.xml|com/sun/org/apache/xerces/internal/impl/xpath/XPath$NodeTest.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.111
+!MESSAGE Unexpected symbol '|' in path "jdk.internal.md|jdk/internal/org/commonmark/renderer/text/TextContentRenderer$Builder.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -891,8 +891,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.922
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/jvm/Items$MemberItem.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.111
+!MESSAGE Unexpected symbol '|' in path "java.desktop|java/awt/GraphicsCallback$PrintCallback.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -954,8 +954,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.922
-!MESSAGE Unexpected symbol '|' in path "java.base|javax/net/ssl/X509ExtendedKeyManager.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.111
+!MESSAGE Unexpected symbol '|' in path "java.xml|com/sun/org/apache/xml/internal/res/XMLErrorResources_ja.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -1017,8 +1017,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.922
-!MESSAGE Unexpected symbol '|' in path "java.naming|com/sun/jndi/ldap/EntryChangeResponseControl.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.111
+!MESSAGE Unexpected symbol '|' in path "java.base|java/util/ResourceBundle$ResourceBundleProviderHelper.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -1080,8 +1080,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.923
-!MESSAGE Unexpected symbol '|' in path "java.base|java/security/Policy.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.112
+!MESSAGE Unexpected symbol '|' in path "java.base|jdk/internal/icu/impl/Norm2AllModes$Normalizer2WithImpl.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -1143,8 +1143,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.923
-!MESSAGE Unexpected symbol '|' in path "java.base|java/lang/invoke/BoundMethodHandle$Species_LLLLL.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.112
+!MESSAGE Unexpected symbol '|' in path "java.base|java/util/concurrent/CompletableFuture$AltResult.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -1206,8 +1206,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.923
-!MESSAGE Unexpected symbol '|' in path "java.base|jdk/internal/random/L128X1024MixRandom.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.112
+!MESSAGE Unexpected symbol '|' in path "java.base|java/net/InetAddress$PlatformResolver.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -1269,8 +1269,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.924
-!MESSAGE Unexpected symbol '|' in path "java.desktop|javax/swing/plaf/synth/DefaultSynthStyleFactory.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.113
+!MESSAGE Unexpected symbol '|' in path "java.xml|com/sun/org/apache/bcel/internal/classfile/Signature$MyByteArrayInputStream.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -1332,8 +1332,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.924
-!MESSAGE Unexpected symbol '|' in path "jdk.jfr|jdk/jfr/snippets/Snippets$Example.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.113
+!MESSAGE Unexpected symbol '|' in path "jdk.hotspot.agent|sun/jvm/hotspot/utilities/RBNode.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -1395,8 +1395,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.924
-!MESSAGE Unexpected symbol '|' in path "java.base|sun/security/util/DisabledAlgorithmConstraints$KeySizeConstraint.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.113
+!MESSAGE Unexpected symbol '|' in path "java.base|sun/nio/ch/WindowsSelectorProvider.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -1458,8 +1458,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.925
-!MESSAGE Unexpected symbol '|' in path "jdk.javadoc|jdk/javadoc/internal/doclets/toolkit/util/Group.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.113
+!MESSAGE Unexpected symbol '|' in path "java.base|java/util/Scanner$TokenSpliterator.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -1521,8 +1521,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.925
-!MESSAGE Unexpected symbol '|' in path "jdk.localedata|sun/util/resources/cldr/ext/TimeZoneNames_zu.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.114
+!MESSAGE Unexpected symbol '|' in path "java.desktop|javax/swing/plaf/metal/DefaultMetalTheme$WindowsFontDelegate.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -1584,8 +1584,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.925
-!MESSAGE Unexpected symbol '|' in path "java.xml.crypto|com/sun/org/apache/xml/internal/security/algorithms/implementations/SignatureBaseRSA$SignatureRSASHA3_224MGF1.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.114
+!MESSAGE Unexpected symbol '|' in path "jdk.localedata|sun/util/resources/cldr/ext/TimeZoneNames_id.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -1647,8 +1647,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.925
-!MESSAGE Unexpected symbol '|' in path "jdk.jfr|jdk/jfr/internal/MirrorEvents.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.114
+!MESSAGE Unexpected symbol '|' in path "java.desktop|javax/swing/Popup$DefaultFrame.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -1710,8 +1710,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.926
-!MESSAGE Unexpected symbol '|' in path "jdk.hotspot.agent|sun/jvm/hotspot/runtime/CompilerThread.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.115
+!MESSAGE Unexpected symbol '|' in path "java.desktop|java/awt/dnd/DragSourceDropEvent.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -1773,8 +1773,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.926
-!MESSAGE Unexpected symbol '|' in path "jdk.hotspot.agent|sun/jvm/hotspot/ui/treetable/JTreeTable$ListToTreeSelectionModelWrapper.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.115
+!MESSAGE Unexpected symbol '|' in path "java.xml|com/sun/org/apache/xml/internal/dtm/ref/DTMDefaultBaseTraversers$ChildTraverser.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -1836,8 +1836,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.926
-!MESSAGE Unexpected symbol '|' in path "java.desktop|javax/swing/plaf/basic/BasicHTML$BasicEditorKit.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.115
+!MESSAGE Unexpected symbol '|' in path "java.desktop|javax/imageio/plugins/tiff/BaselineTIFFTagSet$TileByteCounts.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -1899,8 +1899,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.927
-!MESSAGE Unexpected symbol '|' in path "java.base|java/util/concurrent/ConcurrentHashMap$KeySpliterator.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.115
+!MESSAGE Unexpected symbol '|' in path "java.base|sun/nio/cs/MS950_HKSCS$Encoder.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -1962,8 +1962,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.927
-!MESSAGE Unexpected symbol '|' in path "java.desktop|javax/print/attribute/TextSyntax.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.116
+!MESSAGE Unexpected symbol '|' in path "java.base|sun/nio/cs/MS1255.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -2025,8 +2025,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.927
-!MESSAGE Unexpected symbol '|' in path "java.base|sun/nio/ch/OptionKey.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.116
+!MESSAGE Unexpected symbol '|' in path "java.desktop|com/sun/imageio/plugins/png/PNGMetadataFormat.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -2088,8 +2088,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.928
-!MESSAGE Unexpected symbol '|' in path "jdk.localedata|sun/text/resources/cldr/ext/FormatData_rwk.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.116
+!MESSAGE Unexpected symbol '|' in path "java.xml|com/sun/org/apache/bcel/internal/classfile/EnumElementValue.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -2151,8 +2151,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.928
-!MESSAGE Unexpected symbol '|' in path "java.base|java/util/concurrent/locks/ReentrantReadWriteLock$Sync.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.117
+!MESSAGE Unexpected symbol '|' in path "jdk.incubator.vector|jdk/incubator/vector/DoubleMaxVector$DoubleMaxMask.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -2214,8 +2214,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.928
-!MESSAGE Unexpected symbol '|' in path "jdk.charsets|sun/nio/cs/ext/IBM964$Decoder.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.117
+!MESSAGE Unexpected symbol '|' in path "java.base|jdk/internal/classfile/impl/AbstractPoolEntry$IntegerEntryImpl.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -2277,8 +2277,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.929
-!MESSAGE Unexpected symbol '|' in path "java.rmi|java/rmi/server/SocketSecurityException.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.117
+!MESSAGE Unexpected symbol '|' in path "java.xml|com/sun/org/apache/bcel/internal/generic/ARRAYLENGTH.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -2340,8 +2340,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.929
-!MESSAGE Unexpected symbol '|' in path "java.desktop|com/sun/media/sound/SoftChannel$MidiControlObject.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.117
+!MESSAGE Unexpected symbol '|' in path "java.desktop|javax/sound/midi/spi/SoundbankReader.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -2403,8 +2403,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.929
-!MESSAGE Unexpected symbol '|' in path "java.base|sun/net/InetAddressCachePolicy.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.118
+!MESSAGE Unexpected symbol '|' in path "java.base|java/util/concurrent/ThreadLocalRandom.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -2466,8 +2466,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.930
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/jvm/Items.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.118
+!MESSAGE Unexpected symbol '|' in path "java.base|com/sun/crypto/provider/HmacPKCS12PBECore$HmacPKCS12PBE_SHA512_256.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -2529,8 +2529,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.930
-!MESSAGE Unexpected symbol '|' in path "java.xml|com/sun/org/apache/xerces/internal/dom/RangeImpl.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.118
+!MESSAGE Unexpected symbol '|' in path "jdk.localedata|sun/util/resources/cldr/ext/CurrencyNames_ta_SG.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -2592,8 +2592,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.930
-!MESSAGE Unexpected symbol '|' in path "java.base|javax/net/ssl/SSLSessionBindingEvent.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.119
+!MESSAGE Unexpected symbol '|' in path "java.rmi|java/rmi/ServerRuntimeException.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -2655,8 +2655,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.930
-!MESSAGE Unexpected symbol '|' in path "java.xml|com/sun/org/apache/xerces/internal/impl/xpath/regex/RegularExpression$ClosureContext.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.119
+!MESSAGE Unexpected symbol '|' in path "jdk.localedata|sun/text/resources/ext/CollationData_es.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -2718,8 +2718,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.931
-!MESSAGE Unexpected symbol '|' in path "java.base|com/sun/crypto/provider/ElectronicCodeBook.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.119
+!MESSAGE Unexpected symbol '|' in path "java.base|javax/net/ssl/SSLSocketFactory$DefaultFactoryHolder.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -2781,8 +2781,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.931
-!MESSAGE Unexpected symbol '|' in path "java.desktop|javax/print/DocFlavor$SERVICE_FORMATTED.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.120
+!MESSAGE Unexpected symbol '|' in path "java.base|sun/security/ssl/StatusResponseManager.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -2844,8 +2844,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.931
-!MESSAGE Unexpected symbol '|' in path "jdk.localedata|sun/util/resources/cldr/ext/CurrencyNames_en_MW.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.120
+!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/util/ForwardingDiagnosticFormatter$ForwardingConfiguration.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -2907,8 +2907,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.932
-!MESSAGE Unexpected symbol '|' in path "java.compiler|javax/lang/model/util/SimpleTypeVisitor6.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.120
+!MESSAGE Unexpected symbol '|' in path "java.base|jdk/internal/foreign/LayoutPath$GroupElementByName.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -2970,8 +2970,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.932
-!MESSAGE Unexpected symbol '|' in path "jdk.charsets|sun/nio/cs/ext/IBM420.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.120
+!MESSAGE Unexpected symbol '|' in path "jdk.compiler|sun/tools/serialver/resources/serialver_zh_CN.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -3033,8 +3033,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.932
-!MESSAGE Unexpected symbol '|' in path "java.base|java/util/concurrent/ThreadPerTaskExecutor$TaskRunner.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.121
+!MESSAGE Unexpected symbol '|' in path "java.base|sun/security/ssl/PreSharedKeyExtension$CHPreSharedKeyOnTradeAbsence.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -3096,8 +3096,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.932
-!MESSAGE Unexpected symbol '|' in path "jdk.jfr|jdk/jfr/internal/settings/ThresholdSetting.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.121
+!MESSAGE Unexpected symbol '|' in path "java.desktop|com/sun/imageio/plugins/jpeg/JPEGImageReader$1.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -3159,8 +3159,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.933
-!MESSAGE Unexpected symbol '|' in path "java.base|sun/reflect/generics/tree/SimpleClassTypeSignature.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.121
+!MESSAGE Unexpected symbol '|' in path "java.desktop|com/sun/imageio/plugins/jpeg/JPEGImageReader$2.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -3222,8 +3222,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.933
-!MESSAGE Unexpected symbol '|' in path "java.desktop|com/sun/java/swing/plaf/windows/TMSchema.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.122
+!MESSAGE Unexpected symbol '|' in path "java.desktop|com/sun/imageio/plugins/jpeg/JPEGImageReader$3.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -3285,8 +3285,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.933
-!MESSAGE Unexpected symbol '|' in path "java.desktop|sun/awt/image/WritableRasterNative.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.122
+!MESSAGE Unexpected symbol '|' in path "java.desktop|com/sun/imageio/plugins/jpeg/JPEGImageWriter$1.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -3348,8 +3348,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.934
-!MESSAGE Unexpected symbol '|' in path "java.base|jdk/internal/classfile/impl/AbstractAttributeMapper$SignatureMapper.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.122
+!MESSAGE Unexpected symbol '|' in path "java.base|java/nio/DirectDoubleBufferRS.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -3411,8 +3411,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.934
-!MESSAGE Unexpected symbol '|' in path "java.desktop|javax/imageio/plugins/tiff/FaxTIFFTagSet$BadFaxLines.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.122
+!MESSAGE Unexpected symbol '|' in path "java.xml|com/sun/org/apache/xml/internal/dtm/ref/sax2dtm/SAX2DTM2$TypedAncestorIterator.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -3474,8 +3474,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.934
-!MESSAGE Unexpected symbol '|' in path "jdk.localedata|sun/text/resources/ext/CollationData_sq.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.123
+!MESSAGE Unexpected symbol '|' in path "java.desktop|javax/swing/JTable$AccessibleJTable$AccessibleJTableModelChange.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -3537,8 +3537,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.935
-!MESSAGE Unexpected symbol '|' in path "java.desktop|javax/swing/text/DefaultEditorKit$BeepAction.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.123
+!MESSAGE Unexpected symbol '|' in path "jdk.hotspot.agent|sun/jvm/hotspot/oops/Annotations.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -3600,8 +3600,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.935
-!MESSAGE Unexpected symbol '|' in path "jdk.hotspot.agent|sun/jvm/hotspot/runtime/VirtualConstructor.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.123
+!MESSAGE Unexpected symbol '|' in path "java.xml.crypto|com/sun/org/apache/xml/internal/security/keys/content/keyvalues/ECKeyValue$Curve.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -3663,8 +3663,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.935
-!MESSAGE Unexpected symbol '|' in path "java.net.http|jdk/internal/net/http/hpack/IndexedWriter.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.124
+!MESSAGE Unexpected symbol '|' in path "java.base|jdk/internal/classfile/impl/AbstractAttributeMapper$SyntheticMapper.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -3726,8 +3726,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.935
-!MESSAGE Unexpected symbol '|' in path "jdk.jdi|com/sun/tools/jdi/ConnectorImpl$BooleanArgumentImpl.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.124
+!MESSAGE Unexpected symbol '|' in path "jdk.jlink|jdk/tools/jlink/resources/plugins_ja.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -3789,8 +3789,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.936
-!MESSAGE Unexpected symbol '|' in path "jdk.hotspot.agent|sun/jvm/hotspot/utilities/Interval.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.124
+!MESSAGE Unexpected symbol '|' in path "java.xml|com/sun/org/apache/xerces/internal/parsers/DTDConfiguration.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -3852,8 +3852,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.936
-!MESSAGE Unexpected symbol '|' in path "java.management|javax/management/monitor/CounterMonitor$CounterMonitorObservedObject.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.124
+!MESSAGE Unexpected symbol '|' in path "java.transaction.xa|javax/transaction/xa/XAException.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -3915,8 +3915,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.936
-!MESSAGE Unexpected symbol '|' in path "java.net.http|jdk/internal/net/http/Exchange$ConnectionAborter.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.125
+!MESSAGE Unexpected symbol '|' in path "java.base|java/util/concurrent/atomic/AtomicReferenceArray.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -3978,8 +3978,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.937
-!MESSAGE Unexpected symbol '|' in path "jdk.jdi|com/sun/tools/jdi/JDWP$ThreadReference$SuspendCount.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.125
+!MESSAGE Unexpected symbol '|' in path "java.xml|com/sun/org/apache/xerces/internal/impl/dtd/models/CMNode.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -4041,8 +4041,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.937
-!MESSAGE Unexpected symbol '|' in path "java.xml|com/sun/org/apache/xpath/internal/compiler/XPathDumper.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.125
+!MESSAGE Unexpected symbol '|' in path "java.rmi|java/rmi/server/RemoteObject.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -4104,8 +4104,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.937
-!MESSAGE Unexpected symbol '|' in path "java.desktop|sun/java2d/opengl/WGLSurfaceData$WGLVSyncOffScreenSurfaceData.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.126
+!MESSAGE Unexpected symbol '|' in path "java.base|jdk/internal/icu/text/BidiBase$Isolate.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -4167,8 +4167,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.938
-!MESSAGE Unexpected symbol '|' in path "java.base|jdk/internal/icu/impl/Norm2AllModes$NoopNormalizer2.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.126
+!MESSAGE Unexpected symbol '|' in path "java.net.http|jdk/internal/net/http/frame/Http2Frame.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -4230,8 +4230,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.938
-!MESSAGE Unexpected symbol '|' in path "java.base|jdk/internal/icu/impl/BMPSet.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.126
+!MESSAGE Unexpected symbol '|' in path "java.compiler|javax/annotation/processing/AbstractProcessor.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -4293,8 +4293,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.938
-!MESSAGE Unexpected symbol '|' in path "jdk.hotspot.agent|sun/jvm/hotspot/debugger/posix/elf/ELFFileParser$ELFFileImpl$ELFStringTableImpl.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.126
+!MESSAGE Unexpected symbol '|' in path "java.base|sun/security/provider/HSS$LMSignature.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -4356,8 +4356,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.938
-!MESSAGE Unexpected symbol '|' in path "java.base|com/sun/security/ntlm/NTLM$Reader.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.127
+!MESSAGE Unexpected symbol '|' in path "jdk.internal.jvmstat|sun/jvmstat/perfdata/monitor/protocol/file/PerfDataBuffer.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -4419,8 +4419,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.939
-!MESSAGE Unexpected symbol '|' in path "java.base|java/lang/InstantiationException.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.127
+!MESSAGE Unexpected symbol '|' in path "java.desktop|sun/font/FontManagerFactory.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -4482,8 +4482,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.939
-!MESSAGE Unexpected symbol '|' in path "java.xml|com/sun/org/apache/xerces/internal/impl/xpath/regex/RegularExpression$ExpressionTarget.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.127
+!MESSAGE Unexpected symbol '|' in path "java.base|sun/security/ssl/CertificateRequest$T12CertificateRequestConsumer.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -4545,8 +4545,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.939
-!MESSAGE Unexpected symbol '|' in path "java.rmi|sun/rmi/transport/WeakRef.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.128
+!MESSAGE Unexpected symbol '|' in path "java.base|java/lang/invoke/CallSite.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -4608,8 +4608,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.940
-!MESSAGE Unexpected symbol '|' in path "java.xml|com/sun/org/apache/xml/internal/serializer/ToHTMLStream$Trie$Node.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.128
+!MESSAGE Unexpected symbol '|' in path "java.xml|com/sun/org/apache/xalan/internal/xsltc/compiler/QName.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -4671,8 +4671,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.940
-!MESSAGE Unexpected symbol '|' in path "java.base|sun/security/ec/ECDSASignature$SHA3_224inP1363Format.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.128
+!MESSAGE Unexpected symbol '|' in path "java.base|java/lang/invoke/VarHandleByteArrayAsDoubles.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -4734,8 +4734,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.940
-!MESSAGE Unexpected symbol '|' in path "jdk.httpserver|sun/net/httpserver/simpleserver/SimpleFileServerImpl.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.128
+!MESSAGE Unexpected symbol '|' in path "java.sql|javax/sql/StatementEvent.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -4797,8 +4797,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.941
-!MESSAGE Unexpected symbol '|' in path "java.base|java/util/spi/LocaleServiceProvider.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.129
+!MESSAGE Unexpected symbol '|' in path "jdk.charsets|sun/nio/cs/ext/IBM29626C$Encoder.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -4860,8 +4860,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.941
-!MESSAGE Unexpected symbol '|' in path "java.base|java/lang/invoke/MemberName.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.129
+!MESSAGE Unexpected symbol '|' in path "java.base|sun/nio/ch/WindowsSelectorImpl.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -4923,8 +4923,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.941
-!MESSAGE Unexpected symbol '|' in path "java.base|com/sun/crypto/provider/PBES2Core$HmacSHA384AndAES_256.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.129
+!MESSAGE Unexpected symbol '|' in path "java.base|java/util/LinkedHashMap$LinkedKeySet.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -4986,8 +4986,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.941
-!MESSAGE Unexpected symbol '|' in path "java.xml|com/sun/org/apache/xpath/internal/jaxp/XPathResultImpl.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.130
+!MESSAGE Unexpected symbol '|' in path "jdk.hotspot.agent|sun/jvm/hotspot/memory/VirtualSpace.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -5049,8 +5049,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.942
-!MESSAGE Unexpected symbol '|' in path "java.desktop|javax/swing/plaf/basic/BasicEditorPaneUI.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.130
+!MESSAGE Unexpected symbol '|' in path "java.base|java/util/stream/LongPipeline.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -5112,8 +5112,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.942
-!MESSAGE Unexpected symbol '|' in path "java.base|java/util/ArrayDeque.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.130
+!MESSAGE Unexpected symbol '|' in path "java.desktop|java/awt/DefaultKeyboardFocusManager$TypeAheadMarker.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -5175,8 +5175,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.942
-!MESSAGE Unexpected symbol '|' in path "java.base|jdk/internal/classfile/impl/AbstractInstruction$UnboundStackInstruction.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.131
+!MESSAGE Unexpected symbol '|' in path "jdk.javadoc|jdk/javadoc/internal/doclint/Checker$TagStackItem.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -5238,8 +5238,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.942
-!MESSAGE Unexpected symbol '|' in path "java.base|java/lang/invoke/ClassSpecializer.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.131
+!MESSAGE Unexpected symbol '|' in path "java.desktop|javax/swing/plaf/synth/ParsedSynthStyle$PainterInfo.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -5301,8 +5301,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.943
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/api/JavacTrees$DocFileObject.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.131
+!MESSAGE Unexpected symbol '|' in path "java.sql.rowset|com/sun/rowset/internal/WebRowSetXmlWriter.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -5364,8 +5364,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.943
-!MESSAGE Unexpected symbol '|' in path "java.management|javax/management/openmbean/InvalidOpenTypeException.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.131
+!MESSAGE Unexpected symbol '|' in path "jdk.jdeps|com/sun/tools/jdeps/Dependencies$TargetRegexFilter.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -5427,8 +5427,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.943
-!MESSAGE Unexpected symbol '|' in path "jdk.localedata|sun/util/resources/cldr/ext/TimeZoneNames_haw.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.132
+!MESSAGE Unexpected symbol '|' in path "jdk.jdeps|com/sun/tools/javap/JavapTask$SizeInputStream.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -5490,8 +5490,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.944
-!MESSAGE Unexpected symbol '|' in path "java.base|jdk/internal/classfile/impl/UnboundAttribute$UnboundModuleHashesAttribute.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.132
+!MESSAGE Unexpected symbol '|' in path "java.desktop|javax/swing/JScrollPane.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -5553,8 +5553,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.944
-!MESSAGE Unexpected symbol '|' in path "jdk.jshell|jdk/jshell/SourceCodeAnalysis.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.132
+!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/comp/LambdaToMethod$LambdaAnalyzerPreprocessor$SyntheticMethodNameCounter.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -5616,8 +5616,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.944
-!MESSAGE Unexpected symbol '|' in path "jdk.hotspot.agent|sun/jvm/hotspot/utilities/GrowableArray.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.133
+!MESSAGE Unexpected symbol '|' in path "jdk.hotspot.agent|sun/jvm/hotspot/ui/SourceCodePanel$RowHeader.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -5679,8 +5679,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.945
-!MESSAGE Unexpected symbol '|' in path "java.base|java/security/cert/PKIXCertPathBuilderResult.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.133
+!MESSAGE Unexpected symbol '|' in path "jdk.jdeps|com/sun/tools/javap/JavapTask$ClassFileInfo.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -5742,8 +5742,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.945
-!MESSAGE Unexpected symbol '|' in path "java.xml.crypto|javax/xml/crypto/dsig/TransformException.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.133
+!MESSAGE Unexpected symbol '|' in path "java.desktop|com/sun/swing/internal/plaf/synth/resources/synth.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -5805,8 +5805,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.945
-!MESSAGE Unexpected symbol '|' in path "jdk.hotspot.agent|sun/jvm/hotspot/ci/ciArrayKlass.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.133
+!MESSAGE Unexpected symbol '|' in path "java.base|java/lang/invoke/BoundMethodHandle$Species_LLLJ.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -5868,8 +5868,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.946
-!MESSAGE Unexpected symbol '|' in path "java.base|jdk/internal/util/random/RandomSupport$RandomLongsSpliterator.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.134
+!MESSAGE Unexpected symbol '|' in path "jdk.jshell|jdk/jshell/resources/l10n.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -5931,8 +5931,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.946
-!MESSAGE Unexpected symbol '|' in path "java.base|com/sun/crypto/provider/AESKeyWrap.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.134
+!MESSAGE Unexpected symbol '|' in path "java.base|java/lang/constant/DynamicCallSiteDesc.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -5994,8 +5994,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.946
-!MESSAGE Unexpected symbol '|' in path "jdk.jdi|com/sun/jdi/ClassNotLoadedException.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.134
+!MESSAGE Unexpected symbol '|' in path "java.desktop|javax/swing/plaf/metal/MetalIconFactory.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -6057,8 +6057,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.946
-!MESSAGE Unexpected symbol '|' in path "java.base|java/io/ObjectStreamClass$FieldReflector.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.135
+!MESSAGE Unexpected symbol '|' in path "jdk.charsets|sun/nio/cs/ext/ISO2022_KR$Encoder.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -6120,8 +6120,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.947
-!MESSAGE Unexpected symbol '|' in path "java.base|sun/security/ssl/CertificateVerify$T10CertificateVerifyMessage.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.135
+!MESSAGE Unexpected symbol '|' in path "java.base|com/sun/crypto/provider/AESParameters.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -6183,8 +6183,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.947
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/ClassFinder$1.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.135
+!MESSAGE Unexpected symbol '|' in path "jdk.localedata|sun/text/resources/cldr/ext/FormatData_hi.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -6246,8 +6246,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.947
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/DeferredCompletionFailureHandler$1$1.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.136
+!MESSAGE Unexpected symbol '|' in path "jdk.localedata|sun/util/resources/cldr/ext/TimeZoneNames_en_MY.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -6309,8 +6309,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.948
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/DeferredCompletionFailureHandler$1.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.136
+!MESSAGE Unexpected symbol '|' in path "jdk.jdi|com/sun/tools/jdi/ThreadReferenceImpl$Cache.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -6372,8 +6372,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.948
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/DeferredCompletionFailureHandler$2.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.136
+!MESSAGE Unexpected symbol '|' in path "java.desktop|sun/awt/geom/AreaOp$EOWindOp.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -6435,8 +6435,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.948
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/DeferredCompletionFailureHandler$3.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.136
+!MESSAGE Unexpected symbol '|' in path "jdk.jshell|jdk/jshell/TaskFactory$WrapSourceHandler.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -6498,8 +6498,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.949
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/DeferredLintHandler$1.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.137
+!MESSAGE Unexpected symbol '|' in path "java.base|sun/security/provider/ByteArrayAccess$BE.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -6561,8 +6561,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.949
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/ModuleFinder$1.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.137
+!MESSAGE Unexpected symbol '|' in path "java.management|com/sun/jmx/remote/internal/ServerNotifForwarder$IdAndFilter.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -6624,8 +6624,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.949
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Printer$1.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.137
+!MESSAGE Unexpected symbol '|' in path "java.management|com/sun/jmx/mbeanserver/MBeanAnalyzer$MethodOrder.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -6687,8 +6687,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.949
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Scope$FilterImportScope$1.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.138
+!MESSAGE Unexpected symbol '|' in path "jdk.localedata|sun/util/resources/cldr/provider/CLDRLocaleDataMetaInfo.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -6750,8 +6750,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.949
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Scope$FilterImportScope$2.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.138
+!MESSAGE Unexpected symbol '|' in path "java.desktop|com/sun/imageio/plugins/png/PNGImageReaderSpi.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -6813,8 +6813,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.951
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Scope$ImportScope$1.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.138
+!MESSAGE Unexpected symbol '|' in path "java.xml.crypto|org/jcp/xml/dsig/internal/dom/DOMDigestMethod.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -6876,8 +6876,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.951
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Scope$ScopeImpl$1.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.138
+!MESSAGE Unexpected symbol '|' in path "java.desktop|javax/swing/text/html/HTMLDocument.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -6939,8 +6939,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.951
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Scope$ScopeImpl$2.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.139
+!MESSAGE Unexpected symbol '|' in path "java.base|java/util/concurrent/locks/ReentrantReadWriteLock$Sync$ThreadLocalHoldCounter.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -7002,8 +7002,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.951
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Symbol$Completer$1.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.139
+!MESSAGE Unexpected symbol '|' in path "jdk.localedata|sun/text/resources/cldr/ext/FormatData_doi.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -7065,8 +7065,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.952
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Symbol$MethodSymbol$1.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.139
+!MESSAGE Unexpected symbol '|' in path "jdk.jlink|jdk/tools/jlink/internal/plugins/AddOptionsPlugin.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -7128,8 +7128,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.952
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Symbol$VarSymbol$1.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.140
+!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/comp/ArgumentAttr$LocalCacheContext.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -7191,8 +7191,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.952
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Symtab$1.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.140
+!MESSAGE Unexpected symbol '|' in path "java.xml|com/sun/org/apache/bcel/internal/classfile/ConstantString.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -7254,8 +7254,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.953
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Symtab$2.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.140
+!MESSAGE Unexpected symbol '|' in path "java.desktop|sun/java2d/pipe/AAShapePipe$1.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -7317,8 +7317,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.953
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Symtab$3.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.141
+!MESSAGE Unexpected symbol '|' in path "java.desktop|sun/java2d/pipe/BufferedMaskFill$1.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -7380,8 +7380,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.953
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Symtab$4.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.141
+!MESSAGE Unexpected symbol '|' in path "java.desktop|sun/java2d/pipe/BufferedRenderPipe$1.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -7443,8 +7443,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.954
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Symtab$5.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.141
+!MESSAGE Unexpected symbol '|' in path "java.desktop|sun/java2d/pipe/BufferedTextPipe$1.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -7506,8 +7506,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.954
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Symtab$6.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.141
+!MESSAGE Unexpected symbol '|' in path "java.base|javax/security/auth/DestroyFailedException.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -7569,8 +7569,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.954
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Symtab$7.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.142
+!MESSAGE Unexpected symbol '|' in path "java.base|java/util/TreeMap$EntrySpliterator.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -7632,8 +7632,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.955
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Type$1.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.142
+!MESSAGE Unexpected symbol '|' in path "java.base|sun/security/ec/ECDSASignature$SHA3_512.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -7695,8 +7695,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.955
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Type$2.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.142
+!MESSAGE Unexpected symbol '|' in path "java.base|java/util/Optional.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -7758,8 +7758,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.955
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Type$3.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.143
+!MESSAGE Unexpected symbol '|' in path "jdk.hotspot.agent|sun/jvm/hotspot/gc/shared/CollectedHeapName.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -7821,8 +7821,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.955
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Type$4.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.143
+!MESSAGE Unexpected symbol '|' in path "java.base|jdk/internal/classfile/impl/BoundAttribute$BoundEnclosingMethodAttribute.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -7884,8 +7884,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.956
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Type$ArrayType$1.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.143
+!MESSAGE Unexpected symbol '|' in path "java.base|sun/net/www/protocol/http/HttpURLConnection$StreamingOutputStream.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -7947,8 +7947,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.956
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Type$ArrayType$2.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.143
+!MESSAGE Unexpected symbol '|' in path "java.scripting|javax/script/ScriptException.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -8010,8 +8010,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.956
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Type$CapturedType$1.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.144
+!MESSAGE Unexpected symbol '|' in path "java.base|sun/security/provider/SHA3.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -8073,8 +8073,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.957
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Type$ClassType$1.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.144
+!MESSAGE Unexpected symbol '|' in path "jdk.internal.le|jdk/internal/org/jline/utils/PumpReader$InputStream.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -8136,8 +8136,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.957
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Type$ErrorType$1.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.144
+!MESSAGE Unexpected symbol '|' in path "jdk.localedata|sun/util/resources/cldr/ext/TimeZoneNames_pa.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -8199,8 +8199,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.957
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Type$JCPrimitiveType$1.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.145
+!MESSAGE Unexpected symbol '|' in path "jdk.charsets|sun/nio/cs/ext/JIS_X_0208.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -8262,8 +8262,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.958
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Type$StructuralTypeMapping$1.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.145
+!MESSAGE Unexpected symbol '|' in path "jdk.jconsole|sun/tools/jconsole/BorderedComponent.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -8325,8 +8325,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.958
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Type$StructuralTypeMapping$2.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.145
+!MESSAGE Unexpected symbol '|' in path "java.base|java/util/stream/StreamSpliterators$UnorderedSliceSpliterator.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -8388,8 +8388,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.958
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Type$StructuralTypeMapping$3.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.145
+!MESSAGE Unexpected symbol '|' in path "java.desktop|javax/print/MimeType$ParameterMapEntrySet.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -8451,8 +8451,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.958
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Type$StructuralTypeMapping$4.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.146
+!MESSAGE Unexpected symbol '|' in path "java.desktop|javax/swing/plaf/nimbus/NimbusDefaults$ColorTree$Node.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -8514,8 +8514,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.959
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Type$TypeVar$1.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.146
+!MESSAGE Unexpected symbol '|' in path "jdk.jdeps|com/sun/tools/jdeps/JdepsTask$UncheckedBadArgs.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -8577,8 +8577,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.959
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Type$UndetVar$1.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.146
+!MESSAGE Unexpected symbol '|' in path "java.desktop|javax/swing/undo/AbstractUndoableEdit.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -8640,8 +8640,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.959
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Type$WildcardType$1.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.147
+!MESSAGE Unexpected symbol '|' in path "jdk.javadoc|jdk/javadoc/internal/doclets/formats/html/MarkerComments.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -8703,8 +8703,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.959
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/TypeAnnotations$TypeAnnotationPositions$1.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.147
+!MESSAGE Unexpected symbol '|' in path "jdk.localedata|sun/text/resources/cldr/ext/FormatData_fr.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -8766,8 +8766,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.959
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Types$1.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.147
+!MESSAGE Unexpected symbol '|' in path "jdk.localedata|sun/text/resources/cldr/ext/FormatData_es_PR.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -8829,8 +8829,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.961
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Types$10.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.148
+!MESSAGE Unexpected symbol '|' in path "java.desktop|com/sun/java/swing/plaf/windows/WindowsBorders$ComplementDashedBorder.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -8892,8 +8892,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.961
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Types$11.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.148
+!MESSAGE Unexpected symbol '|' in path "java.base|java/security/cert/CertPathHelperImpl.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -8955,8 +8955,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.961
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Types$12.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.148
+!MESSAGE Unexpected symbol '|' in path "jdk.internal.jvmstat|sun/jvmstat/perfdata/monitor/MonitorTypeException.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -9018,8 +9018,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.962
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Types$13.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.148
+!MESSAGE Unexpected symbol '|' in path "java.base|sun/net/www/http/KeepAliveCleanerEntry.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -9081,8 +9081,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.962
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Types$14.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.149
+!MESSAGE Unexpected symbol '|' in path "jdk.internal.vm.ci|jdk/vm/ci/hotspot/HotSpotCompiledCode$Comment.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -9144,8 +9144,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.962
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Types$15.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.149
+!MESSAGE Unexpected symbol '|' in path "java.desktop|javax/swing/JEditorPane.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -9207,8 +9207,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.963
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Types$16.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.149
+!MESSAGE Unexpected symbol '|' in path "jdk.localedata|sun/util/resources/cldr/ext/CurrencyNames_en_CC.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -9270,8 +9270,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.963
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Types$17.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.150
+!MESSAGE Unexpected symbol '|' in path "jdk.localedata|sun/util/resources/cldr/ext/LocaleNames_cs.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -9333,8 +9333,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.963
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Types$18.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.150
+!MESSAGE Unexpected symbol '|' in path "java.base|jdk/internal/classfile/impl/AbstractAttributeMapper$RuntimeVisibleAnnotationsMapper.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -9396,8 +9396,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.964
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Types$19.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.150
+!MESSAGE Unexpected symbol '|' in path "java.desktop|sun/awt/KeyboardFocusManagerPeerImpl.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -9459,8 +9459,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.964
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Types$2.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.150
+!MESSAGE Unexpected symbol '|' in path "java.base|java/util/concurrent/ConcurrentHashMap$MapReduceKeysToDoubleTask.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -9522,8 +9522,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.964
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Types$20.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.151
+!MESSAGE Unexpected symbol '|' in path "java.base|sun/nio/ch/UnixDomainSockets$UnnamedHolder.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -9585,8 +9585,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.964
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Types$21.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.151
+!MESSAGE Unexpected symbol '|' in path "java.desktop|sun/java2d/loops/Blit$GeneralXorBlit.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -9648,8 +9648,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.965
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Types$22.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.151
+!MESSAGE Unexpected symbol '|' in path "java.base|java/io/FileReader.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -9711,8 +9711,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.965
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Types$23$1.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.152
+!MESSAGE Unexpected symbol '|' in path "java.desktop|sun/awt/image/VSyncedBSManager$SingleVSyncedBSMgr.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -9774,8 +9774,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.965
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Types$23$2.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.152
+!MESSAGE Unexpected symbol '|' in path "java.base|sun/security/ssl/PskKeyExchangeModesExtension$PskKeyExchangeModesSpec.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -9837,8 +9837,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.966
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Types$23.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.152
+!MESSAGE Unexpected symbol '|' in path "java.xml|com/sun/org/apache/xpath/internal/functions/FuncSubstring.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -9900,8 +9900,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.966
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Types$24.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.153
+!MESSAGE Unexpected symbol '|' in path "java.base|jdk/internal/foreign/abi/x64/X86_64Architecture$Regs.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -9963,8 +9963,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.966
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Types$3.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.153
+!MESSAGE Unexpected symbol '|' in path "jdk.jdi|com/sun/tools/jdi/JDWP$Event.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -10026,8 +10026,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.967
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Types$4.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.153
+!MESSAGE Unexpected symbol '|' in path "jdk.jshell|jdk/internal/shellsupport/doc/JavadocHelper$2.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -10089,8 +10089,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.967
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Types$5.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.153
+!MESSAGE Unexpected symbol '|' in path "jdk.internal.jvmstat|sun/jvmstat/perfdata/monitor/protocol/file/FileMonitoredVm.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -10152,8 +10152,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.967
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Types$6.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.154
+!MESSAGE Unexpected symbol '|' in path "java.xml|com/sun/org/apache/xerces/internal/util/XML11Char.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -10215,8 +10215,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.967
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Types$7.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.154
+!MESSAGE Unexpected symbol '|' in path "java.xml|com/sun/org/apache/xml/internal/utils/StylesheetPIHandler.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -10278,8 +10278,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.968
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Types$8.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.154
+!MESSAGE Unexpected symbol '|' in path "java.xml|com/sun/org/apache/bcel/internal/classfile/StackMapType.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -10341,8 +10341,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.968
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Types$9.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.155
+!MESSAGE Unexpected symbol '|' in path "jdk.jshell|jdk/jshell/Key$UniqueKey.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -10404,8 +10404,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.968
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Types$DescriptorCache$1.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.155
+!MESSAGE Unexpected symbol '|' in path "java.desktop|javax/print/attribute/standard/NumberOfInterveningJobs.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -10467,8 +10467,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.969
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Types$Subst$1.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.155
+!MESSAGE Unexpected symbol '|' in path "java.desktop|javax/print/event/PrintEvent.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -10530,8 +10530,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.969
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Types$Subst$2.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.156
+!MESSAGE Unexpected symbol '|' in path "java.xml.crypto|org/jcp/xml/dsig/internal/dom/DOMSignatureMethod$SHA512withRSAandMGF1.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -10593,8 +10593,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.969
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Types$TypeProjection$1.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.156
+!MESSAGE Unexpected symbol '|' in path "java.desktop|javax/swing/text/html/CSS$ShorthandBorderParser.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -10656,8 +10656,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.970
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Types$TypeProjection$2.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.156
+!MESSAGE Unexpected symbol '|' in path "java.desktop|javax/swing/plaf/metal/MetalTitlePane$CloseAction.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -10719,8 +10719,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.970
-!MESSAGE Unexpected symbol '|' in path "jdk.compiler|com/sun/tools/javac/code/Types$TypeProjection$TypeArgumentProjection$1.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.156
+!MESSAGE Unexpected symbol '|' in path "jdk.jdi|com/sun/tools/jdi/JDWP$ReferenceType$Methods$MethodInfo.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)
@@ -10782,8 +10782,8 @@ java.lang.IllegalArgumentException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
 
-!ENTRY org.eclipse.jdt.core 2 4 2025-02-19 07:57:59.970
-!MESSAGE Unexpected symbol '|' in path "jdk.jshell|jdk/jshell/ImportSnippet.class".
+!ENTRY org.eclipse.jdt.core 2 4 2025-02-23 11:24:02.157
+!MESSAGE Unexpected symbol '|' in path "java.xml.crypto|com/sun/org/apache/xml/internal/security/keys/storage/implementations/SingleCertificateResolver.class".
 !STACK 0
 java.lang.IllegalArgumentException
 	at org.eclipse.jdt.internal.core.search.JavaSearchScope.encloses(JavaSearchScope.java:438)

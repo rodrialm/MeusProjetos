@@ -4,6 +4,8 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.GridPane?>
 
 <GridPane xmlns:fx="http://javafx.com/fxml/1"
 	fx:controller="proativa.projeto.modelo.Controlador"
@@ -19,14 +21,14 @@
 
 	</columnConstraints>
 
-	<Label text="PROIMPORTAPONTO" styleClass="tituloPrincipal"
+	<Label text="LEITOR EXCEL" styleClass="tituloPrincipal"
 		GridPane.columnIndex="7" GridPane.rowIndex="1" GridPane.columnSpan="4"
 		GridPane.halignment="LEFT" GridPane.valignment="CENTER">
 
 	</Label>
 
 	<Label
-		text="Anexar o arquivo contendo a lista de CPFs para serem lidos"
+		text="Anexar o arquivo contendo a lista para ser filtrado por coluna!!"
 		styleClass="mensagemFormatoArquivo" GridPane.columnIndex="5"
 		GridPane.rowIndex="3" GridPane.columnSpan="7"
 		GridPane.halignment="CENTER" GridPane.valignment="CENTER">
@@ -40,14 +42,15 @@
 			<Insets top="20" bottom="0" />
 		</GridPane.margin>
 	</Button>
+	<!-- BOTÃO SELECIONAR DIRETORIO ERA PARA UM OUTRA FUNÇÃO!!! (NÃO FOI PARA FRENTE)
 	<Button text="Selecionar Diretório" styleClass="button"
 		GridPane.columnIndex="8" GridPane.rowIndex="8" GridPane.columnSpan="2"
-		onAction="#selecionarDiretorio">
+		disable="true" onAction="#selecionarDiretorio">
 		<GridPane.margin>
 			<Insets top="10" bottom="20" />
 		</GridPane.margin>
 	</Button>
-
+	-->
 	<Button text="Ler Arquivo" styleClass="forma-botao"
 		fx:id="botaoLeitura" GridPane.columnIndex="8" GridPane.rowIndex="9"
 		GridPane.columnSpan="2" GridPane.valignment="CENTER" disable="true"
@@ -60,19 +63,42 @@
 
 	<Button text="Ver Resultado" styleClass="forma-botao"
 		fx:id="botaoMudarCena" GridPane.columnIndex="10" GridPane.rowIndex="9"
-		GridPane.columnSpan="2" GridPane.valignment="CENTER"
+		GridPane.columnSpan="2" GridPane.valignment="CENTER" disable="true"
 		onAction="#setCenaCarregamentoTela">
 
 		<GridPane.margin>
 			<Insets top="20" bottom="0" />
 		</GridPane.margin>
 	</Button>
+	<GridPane GridPane.columnIndex="8" GridPane.rowIndex="5"
+		GridPane.halignment="CENTER">
+		<Label styleClass="label-numero" text="Selecione Coluna"></Label>
+	</GridPane>
+	<GridPane styleClass="campo-texto" GridPane.columnIndex="8"
+		GridPane.rowIndex="6" GridPane.halignment="CENTER">
+		<TextArea styleClass="text-field-numero" text="digite"
+			onMouseClicked="#limparPrimeiraColuna" editable="true"
+			fx:id="primeiraColuna">
+		</TextArea>
+	</GridPane>
+	<GridPane GridPane.columnIndex="10" GridPane.rowIndex="5"
+		GridPane.halignment="CENTER">
+		<Label styleClass="label-numero" text="Selecione Coluna"></Label>
+	</GridPane>
+	<GridPane styleClass="campo-texto" GridPane.columnIndex="10"
+		GridPane.rowIndex="6" GridPane.halignment="CENTER">
+		<TextArea styleClass="text-field-numero" text="digite"
+			onMouseClicked="#limparSegundaColuna" editable="true"
+			fx:id="segundaColuna">
+		</TextArea>
+	</GridPane>
 	<GridPane styleClass="campo-texto" GridPane.columnIndex="10"
 		GridPane.rowIndex="7" GridPane.halignment="CENTER">
 		<TextArea styleClass="text-field" text="selecione o arquivo!"
 			editable="false" fx:id="campoTextoArquivo">
 		</TextArea>
 	</GridPane>
+	<!-- CAMPO SELECIONE DIRETÓRIO ERA PARA O BOTAO SELECIONAR DIRETÓRIO :'(
 	<GridPane styleClass="campo-texto" GridPane.columnIndex="10"
 		GridPane.rowIndex="8" GridPane.halignment="CENTER">
 		<TextArea styleClass="text-field"
@@ -80,7 +106,7 @@
 			editable="false" fx:id="campoTextoPasta">
 		</TextArea>
 	</GridPane>
-
+	 -->
 </GridPane>
 
     

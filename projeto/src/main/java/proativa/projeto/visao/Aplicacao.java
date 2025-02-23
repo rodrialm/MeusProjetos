@@ -1,7 +1,5 @@
 package proativa.projeto.visao;
 
-import java.io.IOException;
-
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -17,45 +15,57 @@ public class Aplicacao extends Application {
 //	private Parent carregamento;
 	private String arquivosCSS;
 	private Stage janela;
-	private Scene cenaPrincipal;
+	private Scene cenaNaTela;
 //	private Scene cenaCarregamento;
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		this.primaryStage = primaryStage;
-
-		carregarCena("proativa.fxml", ".::PROIMPORTAPONTO::.");
+		carregarCenaPrincipal();
 	}
 
-	public void carregarCena(String fxml, String titulo) {
-		try {
-			arquivosCSS = getClass().getResource("Layout.css").toExternalForm();
-			FXMLLoader loader = new FXMLLoader(getClass().getResource("proativa.fxml"));
-			raiz = loader.load();
+	public void carregarCenaPrincipal() throws Exception {
 
-			janela = primaryStage;
+		arquivosCSS = getClass().getResource("Layout.css").toExternalForm();
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("proativa.fxml"));
+		raiz = loader.load();
 
-			janela.setTitle("Proativa");
-			janela.setScene(cenaPrincipal);
+		// faz o controlador setar a pagina para que for chamada
+		Controlador controlador = loader.getController();
+		controlador.setMainApp(this);
 
-			cenaPrincipal = new Scene(raiz, 900, 600);
-			cenaPrincipal.getStylesheets().add(arquivosCSS);
+		janela = primaryStage;
+
+		cenaNaTela = new Scene(raiz, 900, 600);
+		cenaNaTela.getStylesheets().add(arquivosCSS);
 
 //		primaryStage.setMaximized(true);;
-			janela.setTitle(".::PROIMPORTAPONTO::.");
-			janela.setScene(cenaPrincipal);
-			janela.show();
+		janela.setTitle(".:: LEITOR EXCEL ::.");
+		janela.setScene(cenaNaTela);
+		janela.show();
 
-			Object controlador = loader.getController();
-			if (controlador instanceof Controlador) {
-				((Controlador) controlador).setMainApp(this);
-			} else if (controlador instanceof ControladorCarregamento) {
-				((ControladorCarregamento) controlador).setMainApp(this);
-			}
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	}
+
+	public void carregarCenaCarregamento() throws Exception {
+
+		arquivosCSS = getClass().getResource("LayoutCarregamento.css").toExternalForm();
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("carregamento.fxml"));
+		raiz = loader.load();
+
+		// faz o controlador setar a pagina para que for chamada
+		ControladorCarregamento controlador = loader.getController();
+		controlador.setMainApp(this);
+
+		janela = primaryStage;
+
+		cenaNaTela = new Scene(raiz, 900, 600);
+		cenaNaTela.getStylesheets().add(arquivosCSS);
+
+		// Configura a janela principal
+		primaryStage.setTitle(".:: RESULTADO ::.");
+		primaryStage.setScene(cenaNaTela);
+		primaryStage.show();
+
 	}
 
 	public static void main(String[] args) {

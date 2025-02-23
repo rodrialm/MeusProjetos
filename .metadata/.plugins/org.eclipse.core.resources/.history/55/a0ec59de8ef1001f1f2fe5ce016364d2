@@ -1,0 +1,16 @@
+package proativa.projeto.modelo;
+
+import java.util.List;
+
+public class DadosPessoasServicos {
+
+    private List<Pessoa> pessoas;
+
+    public List<Pessoa> getPessoas() {
+        return pessoas;
+    }
+
+    public void setPessoas(List<Pessoa> pessoas) {
+        this.pessoas = pessoas;
+    }
+}

@@ -23,7 +23,12 @@ public class Arquivo {
 	private File arquivoSelecionado;
 	private boolean campoArqivoVazio = true;
 
-	List<Pessoa> pessoas = new ArrayList<>();
+	private int numDaColunaFiltrada1 = 9999 ;
+	private int numDaColunaFiltrada2 = 9999 ;
+	
+	private DadosPessoasServicos  servicoDeDados = DadosPessoasServicos.getInstance();
+
+	public List<Pessoa> pessoas = new ArrayList<>();
 
 	public Arquivo() {
 
@@ -32,7 +37,7 @@ public class Arquivo {
 	public Arquivo(ActionEvent event) throws Exception {
 		buscarArquivo(event);
 	}
-	
+
 	// Selecionar um arquivo pelo Windows Explorer
 	public void buscarArquivo(ActionEvent event) {
 
@@ -43,8 +48,9 @@ public class Arquivo {
 					.addAll(new FileChooser.ExtensionFilter("Arquivos Excel", "*.xls", "*.xlsx"));
 			Stage stage = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
 			arquivoSelecionado = selecionarArquivo.showOpenDialog(stage);
+			
 			nomeArquivo = arquivoSelecionado.getName();
-			if(!arquivoSelecionado.getName().equalsIgnoreCase("selecione o arquivo!")) {
+			if (!arquivoSelecionado.getName().equalsIgnoreCase("selecione o arquivo!")) {
 				campoArqivoVazio = false;
 			}
 
@@ -54,13 +60,13 @@ public class Arquivo {
 		}
 
 	}
-	
+
 	// Trata um arquivo se ele for .XLS ou .XLSX
 	public void lerArquivo() {
-		
+
 		// FiltroColunaCpf foi um jeito de escolher a coluna CPF
 		boolean filtroColunaCpf;
-		String cpf;
+		String nome;
 		String email;
 		String nomeCelula;
 //		int contador = 0;
@@ -75,54 +81,68 @@ public class Arquivo {
 
 			Sheet sheet = workbook.getSheetAt(0);
 
-			int rowIndex = 0;
+//			int rowIndex = 0;
 
 			for (Row linha : sheet) {
 
 				// Pula a primeira linha da planilha
 
-				if (rowIndex == 0) {
-					rowIndex++;
-					continue;
-				}
-				
-				 for (Cell celula : linha) {
+//				if (rowIndex == 0) {
+////					rowIndex++;
+//					continue;
+//				}
 
-				nomeCelula = celula.getAddress().toString();
-				filtroColunaCpf = nomeCelula.toUpperCase().startsWith("D");
+				for (Cell celula : linha) {
 
-				if (filtroColunaCpf) {
-					switch (celula.getCellType()) {
+					nomeCelula = celula.getAddress().toString();
+					filtroColunaCpf = nomeCelula.toUpperCase().startsWith("A");
 
-					case STRING:
-						cpf = linha.getCell(3).toString();  // Seleciona a coluna de indice 3
-						email = linha.getCell(4).toString(); // Seleciona a coluna de indice 4
-						Pessoa pessoa = new Pessoa(cpf , email);
-						pessoas.add(pessoa);
+					if (filtroColunaCpf) {
+						switch (celula.getCellType()) {
+
+						case STRING:
+							
+							try {
+								if(linha.getCell(numDaColunaFiltrada1) != null || linha.getCell(numDaColunaFiltrada1) != null) {
+									
+								Pessoa pessoa;
+								nome = linha.getCell(numDaColunaFiltrada1).toString(); // Seleciona a coluna de indice 3
+								email = linha.getCell(numDaColunaFiltrada2).toString(); // Seleciona a coluna de indice 4
+								pessoa = new Pessoa(nome, email);
+								pessoas.add(pessoa);
+								} 
+							} catch (Exception e) {
+								System.out.println(e.getMessage());
+//								Alert erroDeColunas = new Alert(Alert.AlertType.ERROR);
+//								erroDeColunas.setTitle("Erro Colunas");
+//								erroDeColunas.setHeaderText("Uma ou mais Colunas não encontradas!");
+//								erroDeColunas.setContentText("Por favor, digite um número válido.");
+//								erroDeColunas.showAndWait();
+							}
 
 //						System.out.println(cpf + " | " + email);  // para ver ser está pegando as informações coretas
 //						contador++;
-						break;
+							break;
 
-					case NUMERIC:
+						case NUMERIC:
 //						 System.out.print(celula.getNumericCellValue() + " | \t");
-						break;
+							break;
 
-					case BOOLEAN:
+						case BOOLEAN:
 //						 System.out.print(celula.getBooleanCellValue() + " | \t");
-						break;
+							break;
 
-					case FORMULA:
+						case FORMULA:
 //						 System.out.print(celula.getCellFormula() + " | \t");
-						break;
+							break;
 
-					default:
+						default:
 //						System.out.print("Desconhecido \t");
 
+						}
 					}
-				 }
 //				 System.out.println();
-					rowIndex++;
+//					rowIndex++;
 				}
 			}
 //			System.out.println("Linhas percorridas:  " + contador); // para ver quantas linhas percorreu
@@ -131,16 +151,37 @@ public class Arquivo {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-
+	}
+	
+	public void setDadosPessoas() {
+		if(arquivoSelecionado != null) {
+			servicoDeDados.setPessoas(pessoas);
+		}
 	}
 
 	public String getNome() {
-			return nomeArquivo;
-		}
-	
-	
+		return nomeArquivo;
+	}
+
 	public boolean isCampoArquivoVazio() {
 		return campoArqivoVazio;
 	}
+
+	public int getNumDaColunaFiltrada1() {
+		return numDaColunaFiltrada1;
+	}
+
+	public void setNumDaColunaFiltrada1(int numDaColunaFiltrada1) {
+		this.numDaColunaFiltrada1 = numDaColunaFiltrada1;
+	}
+
+	public int getNumDaColunaFiltrada2() {
+		return numDaColunaFiltrada2;
+	}
+
+	public void setNumDaColunaFiltrada2(int numDaColunaFiltrada2) {
+		this.numDaColunaFiltrada2 = numDaColunaFiltrada2;
+	}
+
 	
 }

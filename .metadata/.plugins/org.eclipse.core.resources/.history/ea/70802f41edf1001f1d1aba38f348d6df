@@ -1,0 +1,137 @@
+package proativa.projeto.modelo;
+
+import java.io.IOException;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.Alert.AlertType;
+import proativa.projeto.visao.Aplicacao;
+
+public class Controlador {
+	private Aplicacao aplicacao;
+	Arquivo arquivo = new Arquivo();
+	ProcurarDiretorio diretorio = new ProcurarDiretorio();
+	
+	
+	@FXML
+	Button botaoLeitura;
+	
+	@FXML
+	Button botaoMudarCena;
+	
+	@FXML
+	private TextArea campoTextoArquivo;
+	
+	@FXML
+	private TextArea campoTextoPasta;
+
+	@FXML
+	private TextArea primeiraColuna;
+
+	@FXML
+	private TextArea segundaColuna;
+	
+	@FXML
+	private TableView<Arquivo> tabela;
+
+	boolean campoDiretorioVazio = diretorio.isCampoDiretorioVazio();
+	boolean campoArquivoVazio = arquivo.isCampoArquivoVazio();
+	
+
+	public void procurarArquivo(ActionEvent event) {
+
+		// Pega um arquivo e chama um metado para abrir Windows Explorer para procurar
+		arquivo.buscarArquivo(event);
+		getCamposSeVazios();
+		if (campoDiretorioVazio) {
+			campoTextoArquivo.setText(arquivo.getNome());
+			getCamposSeVazios();
+		} else {
+			campoTextoArquivo.setText("selecione o arquivo!");
+		}
+		// habilita o Botao caso os arquivos estejam selecionados
+		if (!campoArquivoVazio) { 				// adicione  && !campoDiretorioVazio se quiser checar os dois campos
+			botaoLeitura.setDisable(false);
+		} else {
+			botaoLeitura.setDisable(true);
+		}
+		getCamposSeVazios();
+	}
+
+	@FXML
+	public void selecionarDiretorio(ActionEvent event) {
+		getCamposSeVazios();
+
+		diretorio.procurarDiretorio(event);
+		campoTextoPasta.setText(diretorio.getCaminhoDiretorio());
+		if (campoDiretorioVazio) {
+			getCamposSeVazios();
+		} else {
+			campoTextoPasta.setText("selecione o diretório");
+		}
+		if (!campoArquivoVazio && !campoDiretorioVazio) {
+			botaoLeitura.setDisable(false);
+		} else {
+			botaoLeitura.setDisable(true);
+		}
+		getCamposSeVazios();
+	}
+	
+	 public void setMainApp(Aplicacao mainApp) {
+	        aplicacao = mainApp;
+	    }
+	
+	@FXML
+	public void setCenaCarregamentoTela () throws IOException{
+		
+		try {
+			aplicacao.carregarCenaCarregamento();
+		} catch (Exception e) {
+//			e.printStackTrace();
+			System.out.println(e.getMessage());
+		}
+
+	}
+
+	@FXML
+	public void lerArquivo() {
+		if(arquivo != null) {
+			setNumeroDasColunasASeremFiltradas();
+			arquivo.lerArquivo();
+			arquivo.setDadosPessoas();
+			botaoMudarCena.setDisable(false);
+		}
+	}
+	
+
+	@FXML
+	public void fechar() {
+		System.exit(0);
+	}
+	// Coloquei esse metodo para colocar se os campos estão vazios antes e depois de cada metodo executado
+	private void getCamposSeVazios() {
+		campoDiretorioVazio = diretorio.isCampoDiretorioVazio();
+		campoArquivoVazio = arquivo.isCampoArquivoVazio();
+	}
+	
+	private void setNumeroDasColunasASeremFiltradas () {
+		
+			try {
+				int numero = Integer.parseInt(primeiraColuna.getText());
+				arquivo.setNumDaColunaFiltrada1(numero);
+				int numero2 = Integer.parseInt(segundaColuna.getText());
+				arquivo.setNumDaColunaFiltrada2(numero2);
+			} catch (NumberFormatException e) {
+				e.printStackTrace();
+				Alert erroDeColunas = new Alert(Alert.AlertType.ERROR);
+				erroDeColunas.setTitle("Erro Colunas");
+				erroDeColunas.setHeaderText("Entrada inválida");
+				erroDeColunas.setContentText("Por favor, digite um número válido");
+			}
+		
+	}
+}

@@ -1,36 +1,59 @@
 package proativa.projeto.modelo;
 
-import java.io.IOException;
+import java.util.List;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.stage.Stage;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import proativa.projeto.visao.Aplicacao;
 
 public class ControladorCarregamento {
-	
+
+//	Controlador controladorPrincipal;
 	private Aplicacao aplicacao;
-	
-    @FXML
-    private Button btnVoltar; // Botão para voltar à cena principal
 
-    
-    public void setMainApp(Aplicacao mainApp) {
-        this.aplicacao = mainApp;
-    }
-    @FXML
-    private void voltarParaMain() throws IOException {
-        // Carrega o arquivo FXML da cena principal
-        Parent root = FXMLLoader.load(getClass().getResource("/views/main.fxml"));
+	@FXML
+	TableView<Pessoa> tabelaPessoas;
 
-        // Obtém o Stage atual a partir do botão clicado
-        Stage stage = (Stage) btnVoltar.getScene().getWindow();
+	@FXML
+	private TableColumn<Pessoa, String> colunaNome;
 
-        // Define a nova cena no Stage
-        stage.setScene(new Scene(root));
-        stage.setTitle("Cena Principal");
-    }
+	@FXML
+	private TableColumn<Pessoa, String> colunaEmail;
+
+    private DadosPessoasServicos servicoDeDados = DadosPessoasServicos.getInstance();
+
+	public void setMainApp(Aplicacao mainApp) {
+		this.aplicacao = mainApp;
+
+		colunaNome.setCellValueFactory(new PropertyValueFactory<>("Nome"));
+		colunaEmail.setCellValueFactory(new PropertyValueFactory<>("Email"));
+		
+//		tabelaPessoas.getColumns().addAll(colunaNome, colunaEmail);
+		List<Pessoa> pessoas = servicoDeDados.getPessoas();
+
+		ObservableList<Pessoa> observablePessoas;
+		observablePessoas = FXCollections.observableArrayList(pessoas);
+		tabelaPessoas.setItems(observablePessoas);
+	}
+
+	@FXML
+	public void fechar() {
+		
+		
+		System.exit(0);
+	}
+
+	@FXML
+	private void voltarParaMain() {
+		try {
+			aplicacao.carregarCenaPrincipal();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 }

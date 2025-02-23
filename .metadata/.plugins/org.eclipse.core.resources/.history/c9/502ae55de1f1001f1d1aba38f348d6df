@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="proativa.projeto.modelo.Controlador"
+	styleClass="backgoundPrincipal" hgap="15" vgap="15">
+
+	<padding>
+		<Insets left="30" right="40" top="40" bottom="40" />
+	</padding>
+
+	<columnConstraints>
+		<ColumnConstraints minWidth="60" prefWidth="60" />
+
+
+	</columnConstraints>
+
+	<Label text="LEITOR EXCEL" styleClass="tituloPrincipal"
+		GridPane.columnIndex="7" GridPane.rowIndex="1" GridPane.columnSpan="4"
+		GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+
+	</Label>
+
+	<Label
+		text="Anexar o arquivo contendo a lista de CPFs para serem lidos"
+		styleClass="mensagemFormatoArquivo" GridPane.columnIndex="5"
+		GridPane.rowIndex="3" GridPane.columnSpan="7"
+		GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+	</Label>
+
+	<Button text="Arquivo" styleClass="forma-botao"
+		GridPane.columnIndex="8" GridPane.rowIndex="7" GridPane.columnSpan="2"
+		GridPane.valignment="CENTER" onAction="#procurarArquivo">
+
+		<GridPane.margin>
+			<Insets top="20" bottom="0" />
+		</GridPane.margin>
+	</Button>
+	<Button text="Selecionar Diretório" styleClass="button"
+		GridPane.columnIndex="8" GridPane.rowIndex="8" GridPane.columnSpan="2"
+		disable="true" onAction="#selecionarDiretorio">
+		<GridPane.margin>
+			<Insets top="10" bottom="20" />
+		</GridPane.margin>
+	</Button>
+
+	<Button text="Ler Arquivo" styleClass="forma-botao"
+		fx:id="botaoLeitura" GridPane.columnIndex="8" GridPane.rowIndex="9"
+		GridPane.columnSpan="2" GridPane.valignment="CENTER" disable="true"
+		onAction="#lerArquivo">
+
+		<GridPane.margin>
+			<Insets top="20" bottom="0" />
+		</GridPane.margin>
+	</Button>
+
+	<Button text="Ver Resultado" styleClass="forma-botao"
+		fx:id="botaoMudarCena" GridPane.columnIndex="10" GridPane.rowIndex="9"
+		GridPane.columnSpan="2" GridPane.valignment="CENTER" disable="true"
+		onAction="#setCenaCarregamentoTela">
+
+		<GridPane.margin>
+			<Insets top="20" bottom="0" />
+		</GridPane.margin>
+	</Button>
+	<GridPane styleClass="campo-texto" GridPane.columnIndex="10"
+		GridPane.rowIndex="7" GridPane.halignment="CENTER">
+		<TextArea styleClass="text-field" text="selecione o arquivo!"
+			editable="false" fx:id="campoTextoArquivo">
+		</TextArea>
+	</GridPane>
+	<GridPane styleClass="campo-texto" GridPane.columnIndex="10"
+		GridPane.rowIndex="8" GridPane.halignment="CENTER">
+		<TextArea styleClass="text-field"
+			GridPane.valignment="CENTER" text="selecione o diretório!"
+			editable="false" fx:id="campoTextoPasta">
+		</TextArea>
+	</GridPane>
+
+</GridPane>
+
+    
+
