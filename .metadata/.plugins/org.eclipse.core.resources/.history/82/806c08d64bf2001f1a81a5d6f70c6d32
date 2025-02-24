@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="proativa.projeto.modelo.Controlador"
+	styleClass="backgoundPrincipal" hgap="15" vgap="15">
+
+	<padding>
+		<Insets left="30" right="40" top="40" bottom="40" />
+	</padding>
+
+	<columnConstraints>
+		<ColumnConstraints minWidth="60" prefWidth="60" />
+
+
+	</columnConstraints>
+
+	<Label text="LEITOR EXCEL" styleClass="tituloPrincipal"
+		GridPane.columnIndex="7" GridPane.rowIndex="1" GridPane.columnSpan="4"
+		GridPane.halignment="LEFT" GridPane.valignment="CENTER">
+
+	</Label>
+
+	<Label
+		text="Anexar o arquivo contendo a lista para ser filtrado por coluna!"
+		styleClass="mensagemFormatoArquivo" GridPane.columnIndex="6"
+		GridPane.rowIndex="3" GridPane.columnSpan="8"
+		GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+	</Label>
+	<Label
+		text="A primeira Coluna da planilha é identificado por (0)"
+		styleClass="mensagemFormatoArquivo" GridPane.columnIndex="5"
+		GridPane.rowIndex="4" GridPane.columnSpan="8"
+		GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+	</Label>
+
+	<Button text="Arquivo" styleClass="forma-botao"
+		GridPane.columnIndex="8" GridPane.rowIndex="7" GridPane.columnSpan="2"
+		GridPane.valignment="CENTER" onAction="#procurarArquivo">
+
+		<GridPane.margin>
+			<Insets top="20" bottom="0" />
+		</GridPane.margin>
+	</Button>
+	<!-- BOTÃO SELECIONAR DIRETORIO ERA PARA UM OUTRA FUNÇÃO!!! (NÃO FOI PARA FRENTE)
+	<Button text="Selecionar Diretório" styleClass="button"
+		GridPane.columnIndex="8" GridPane.rowIndex="8" GridPane.columnSpan="2"
+		disable="true" onAction="#selecionarDiretorio">
+		<GridPane.margin>
+			<Insets top="10" bottom="20" />
+		</GridPane.margin>
+	</Button>
+	-->
+	<Button text="Ler Arquivo" styleClass="forma-botao"
+		fx:id="botaoLeitura" GridPane.columnIndex="8" GridPane.rowIndex="9"
+		GridPane.columnSpan="2" GridPane.valignment="CENTER" disable="true"
+		onAction="#lerArquivo">
+
+		<GridPane.margin>
+			<Insets top="20" bottom="0" />
+		</GridPane.margin>
+	</Button>
+
+	<Button text="Ver Resultado" styleClass="forma-botao"
+		fx:id="botaoMudarCena" GridPane.columnIndex="10" GridPane.rowIndex="9"
+		GridPane.columnSpan="2" GridPane.valignment="CENTER" disable="true"
+		onAction="#setCenaCarregamentoTela">
+
+		<GridPane.margin>
+			<Insets top="20" bottom="0" />
+		</GridPane.margin>
+	</Button>
+	<GridPane GridPane.columnIndex="8" GridPane.rowIndex="5"
+		GridPane.halignment="CENTER">
+		<Label styleClass="label-numero" text="Selecione Coluna"></Label>
+	</GridPane>
+	<GridPane styleClass="campo-texto" GridPane.columnIndex="8"
+		GridPane.rowIndex="6" GridPane.halignment="CENTER">
+		<TextArea styleClass="text-field-numero" text="digite"
+			onMouseClicked="#limparPrimeiraColuna" editable="true"
+			fx:id="primeiraColuna">
+		</TextArea>
+	</GridPane>
+	<GridPane GridPane.columnIndex="10" GridPane.rowIndex="5"
+		GridPane.halignment="CENTER">
+		<Label styleClass="label-numero" text="Selecione Coluna"></Label>
+	</GridPane>
+	<GridPane styleClass="campo-texto" GridPane.columnIndex="10"
+		GridPane.rowIndex="6" GridPane.halignment="CENTER">
+		<TextArea styleClass="text-field-numero" text="digite"
+			onMouseClicked="#limparSegundaColuna" editable="true"
+			fx:id="segundaColuna">
+		</TextArea>
+	</GridPane>
+	<GridPane styleClass="campo-texto" GridPane.columnIndex="10"
+		GridPane.rowIndex="7" GridPane.halignment="CENTER">
+		<TextArea styleClass="text-field" text="selecione o arquivo!"
+			editable="false" fx:id="campoTextoArquivo">
+		</TextArea>
+	</GridPane>
+	<!-- CAMPO SELECIONE DIRETÓRIO ERA PARA O BOTAO SELECIONAR DIRETÓRIO :'(
+	<GridPane styleClass="campo-texto" GridPane.columnIndex="10"
+		GridPane.rowIndex="8" GridPane.halignment="CENTER">
+		<TextArea styleClass="text-field"
+			GridPane.valignment="CENTER" text="selecione o diretório!"
+			editable="false" fx:id="campoTextoPasta">
+		</TextArea>
+	</GridPane>
+	 -->
+</GridPane>
+
+    
+

@@ -112,12 +112,6 @@ public class Arquivo {
 								pessoas.add(pessoa);
 								} 
 							} catch (Exception e) {
-								System.out.println(e.getMessage());
-//								Alert erroDeColunas = new Alert(Alert.AlertType.ERROR);
-//								erroDeColunas.setTitle("Erro Colunas");
-//								erroDeColunas.setHeaderText("Uma ou mais Colunas não encontradas!");
-//								erroDeColunas.setContentText("Por favor, digite um número válido.");
-//								erroDeColunas.showAndWait();
 							}
 
 //						System.out.println(cpf + " | " + email);  // para ver ser está pegando as informações coretas

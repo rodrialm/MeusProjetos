@@ -28,9 +28,15 @@
 	</Label>
 
 	<Label
-		text="Anexar o arquivo contendo a lista para ser filtrado por coluna!!"
+		text="Anexar o arquivo contendo a lista para ser filtrado por coluna!"
+		styleClass="mensagemFormatoArquivo" GridPane.columnIndex="7"
+		GridPane.rowIndex="3" GridPane.columnSpan="8"
+		GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+	</Label>
+	<Label
+		text="A primeira Coluna da planilha é identificado por (0)"
 		styleClass="mensagemFormatoArquivo" GridPane.columnIndex="5"
-		GridPane.rowIndex="3" GridPane.columnSpan="7"
+		GridPane.rowIndex="4" GridPane.columnSpan="8"
 		GridPane.halignment="CENTER" GridPane.valignment="CENTER">
 	</Label>
 
