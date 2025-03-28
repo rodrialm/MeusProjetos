@@ -1,0 +1,7 @@
+com\rodalm\interfaceWeb4Linux\modelo\Acesso.class
+com\rodalm\interfaceWeb4Linux\controlador\Conexao.class
+com\rodalm\interfaceWeb4Linux\controlador\PaginaHomeControlador.class
+com\rodalm\interfaceWeb4Linux\Aplicacao.class
+com\rodalm\interfaceWeb4Linux\modelo\ResultadoComandos.class
+com\rodalm\interfaceWeb4Linux\controlador\PaginaLoginControlador.class
+com\rodalm\interfaceWeb4Linux\controlador\ExecutarComando.class
