@@ -1,32 +1,15 @@
-# Configurações do Servidor Web
 server:
   port: 8080
   servlet:
-    context-path:
-    session:
-      timeout: 30m
-  error:
-    include-stacktrace: never
+    context-path: /
 
-# Configurações de Banco de Dados
 spring:
-  datasource:
-    url: jdbc:postgreesql://192.168.203.71:5432/Interface_4_Linux
-    username: rodrigo
-    password: 1Pao@Queijo
-    driver-class-name: org.postgresql.Driver
-    hikari:
-      connection-timeout: 20000
-      maximum-pool-size: 10
-
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true
-    properties:
-      hibernate:
-        format_sql: true
-        jdbc:
-          lob:
-            non_contextual_creation: true
-        dialect: org.hibernate.dialect.PostgreSQLDialect
+  application:
+    name: login-app
+  thymeleaf:
+    cache: true
+    prefix: classpath:/templates/
+    suffix: .html
+  web:
+    resources:
+      static-locations: classpath:/static/

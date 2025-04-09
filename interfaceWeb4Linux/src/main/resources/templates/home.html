@@ -118,8 +118,16 @@
                 </div>
             </div>
 
-            <div class="alert alert-success">
-                <i class="bi bi-check-circle-fill"></i> Login efetuado com sucesso!
+            <div class="editor-container">
+                <h1>Sites Liberados</h1>
+
+                <form th:action="@{/editor/salvar}" method="post">
+                    <textarea name="novoConteudo" th:text="${conteudo}"></textarea>
+                    <div class="botoes">
+                        <button type="submit">Salvar</button>
+                        <button type="button" onclick="location.href='/editor'">Cancelar</button>
+                    </div>
+                </form>
             </div>
 
 

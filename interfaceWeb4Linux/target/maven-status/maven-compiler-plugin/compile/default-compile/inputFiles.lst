@@ -1,7 +1,8 @@
 C:\Projetos\MeusProjetos\interfaceWeb4Linux\src\main\java\com\rodalm\interfaceWeb4Linux\Aplicacao.java
-C:\Projetos\MeusProjetos\interfaceWeb4Linux\src\main\java\com\rodalm\interfaceWeb4Linux\controlador\ConexaoSSH.java
 C:\Projetos\MeusProjetos\interfaceWeb4Linux\src\main\java\com\rodalm\interfaceWeb4Linux\controlador\ControladorPaginaHome.java
 C:\Projetos\MeusProjetos\interfaceWeb4Linux\src\main\java\com\rodalm\interfaceWeb4Linux\controlador\ControladorPaginaLogin.java
 C:\Projetos\MeusProjetos\interfaceWeb4Linux\src\main\java\com\rodalm\interfaceWeb4Linux\controlador\ExecutarComando.java
 C:\Projetos\MeusProjetos\interfaceWeb4Linux\src\main\java\com\rodalm\interfaceWeb4Linux\modelo\Acesso.java
 C:\Projetos\MeusProjetos\interfaceWeb4Linux\src\main\java\com\rodalm\interfaceWeb4Linux\modelo\ResultadoComandos.java
+C:\Projetos\MeusProjetos\interfaceWeb4Linux\src\main\java\com\rodalm\interfaceWeb4Linux\modelo\Usuario.java
+C:\Projetos\MeusProjetos\interfaceWeb4Linux\src\main\java\com\rodalm\interfaceWeb4Linux\servico\ConexaoSSH.java

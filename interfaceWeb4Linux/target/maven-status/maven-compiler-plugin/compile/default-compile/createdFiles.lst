@@ -1,7 +1,8 @@
+com\rodalm\interfaceWeb4Linux\modelo\Usuario.class
 com\rodalm\interfaceWeb4Linux\modelo\Acesso.class
 com\rodalm\interfaceWeb4Linux\Aplicacao.class
+com\rodalm\interfaceWeb4Linux\servico\ConexaoSSH.class
 com\rodalm\interfaceWeb4Linux\modelo\ResultadoComandos.class
 com\rodalm\interfaceWeb4Linux\controlador\ControladorPaginaLogin.class
 com\rodalm\interfaceWeb4Linux\controlador\ControladorPaginaHome.class
 com\rodalm\interfaceWeb4Linux\controlador\ExecutarComando.class
-com\rodalm\interfaceWeb4Linux\controlador\ConexaoSSH.class
